@@ -24,4 +24,8 @@
     <string name="seekbar_default_value_already_set">Default value is already set</string>
     <string name="seekbar_default_string">Default</string>
 
+    <!-- Value to pass to callback when restore button is pressed -->
+    <declare-styleable name="ColorPreference">
+        <attr name="defaultColorValue" format="integer" />
+    </declare-styleable>
 </resources>
