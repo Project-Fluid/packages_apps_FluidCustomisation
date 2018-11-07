@@ -28,4 +28,13 @@
         <attr name="value_popup_view_bg" format="color" />
     </declare-styleable>
 
+    <!-- Base attributes available to CustomSeekBarPreference. -->
+    <declare-styleable name="CustomSeekBarPreference">
+        <attr name="interval" format="integer" />
+        <attr name="showSign" format="boolean" />
+        <attr name="units" format="string|reference" />
+        <attr name="continuousUpdates" format="boolean" />
+        <attr name="defaultText" format="string|reference" />
+    </declare-styleable>
+
 </resources>
