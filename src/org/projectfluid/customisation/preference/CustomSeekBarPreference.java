@@ -180,7 +180,7 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
                 (!mTrackingTouch || mContinuousUpdates ? getTextValue(mValue) +
                 (mDefaultValueExists && mValue == mDefaultValue ? " (" +
                 getContext().getString(R.string.custom_seekbar_default_value) + ")" : "")
-                    : "[" + getTextValue(mTrackingValue) + "]")));
+                    : getTextValue(mTrackingValue))));
         }
         if (mResetImageView != null) {
             if (!mDefaultValueExists || mValue == mDefaultValue || mTrackingTouch)
