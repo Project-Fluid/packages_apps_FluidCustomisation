@@ -66,6 +66,9 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CustomSeekBarPreference);
         try {
             mShowSign = a.getBoolean(R.styleable.CustomSeekBarPreference_showSign, mShowSign);
+            String units = a.getString(R.styleable.CustomSeekBarPreference_units);
+            if (units != null)
+                mUnits = " " + units;
             mContinuousUpdates = a.getBoolean(R.styleable.CustomSeekBarPreference_continuousUpdates, mContinuousUpdates);
         } finally {
             a.recycle();
@@ -78,7 +81,6 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
         } catch (Exception e) {
             Log.e(TAG, "Invalid interval value", e);
         }
-        mUnits = getAttributeStringValue(attrs, SETTINGS_NS, "units", "");
         mMinValue = attrs.getAttributeIntValue(SETTINGS_NS, "min", mMinValue);
         mMaxValue = attrs.getAttributeIntValue(ANDROIDNS, "max", mMaxValue);
         if (mMaxValue < mMinValue)
@@ -150,16 +152,6 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
         mResetImageView.setOnLongClickListener(this);
         mMinusImageView.setOnLongClickListener(this);
         mPlusImageView.setOnLongClickListener(this);
-    }
-
-    private String getAttributeStringValue(AttributeSet attrs, String namespace, String name,
-            String defaultValue) {
-        String value = attrs.getAttributeValue(namespace, name);
-
-        if (value == null)
-            value = defaultValue;
-
-        return value;
     }
 
     protected int getLimitedValue(int v) {
