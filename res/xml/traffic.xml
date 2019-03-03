@@ -39,11 +39,18 @@
         settings:min="0"
         settings:units="" />
 
-    <org.projectfluid.preference.SystemSettingSwitchPreference
+    <org.projectfluid.customisation.preference.SystemSettingSwitchPreference
         android:key="network_traffic_hidearrow"
         android:title="@string/network_traffic_arrow"
         android:summary="@string/network_traffic_arrow_summary"
         android:dependency="network_traffic_state"
         android:defaultValue="false" />
 
+    <org.projectfluid.customisation.preference.CustomSeekBarPreference
+        android:key="network_traffic_font_size"
+        android:title="@string/nettraf_font_size"
+        android:max="52"
+        settings:min="21"
+        settings:defaultValue="42"
+        settings:units="dp" />
 </PreferenceScreen>

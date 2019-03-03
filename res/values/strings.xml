@@ -52,6 +52,7 @@
     <string name="show_network_traffic_up">Uplink</string>
     <string name="show_network_traffic_down">Downlink</string>
     <string name="show_network_traffic_all">Uplink and Downlink</string>
+    <string name="nettraf_font_size">Single net font size</string>
 
     <!-- System -->
     <string name="pocket_judge_title">Pocket detection</string>
@@ -67,5 +68,4 @@
     <string name="lockscreen_media_blur_title">Media art blur level</string>
     <string name="show_lockscreen_media_art_title">Show media art</string>
     <string name="lockscreen_media_art_options_title">Lockscreen media art</string>
-
 </resources>
