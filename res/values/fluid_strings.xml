@@ -27,6 +27,10 @@
     <!-- Customization titles -->
     <string name="themes_ui">UI</string>
     <string name="theme_customization_sysui_icon_title">Statusbar icon</string>
+    <string name="themes_color">Theming</string>
+    <string name="themes_summary">Theming section</string>
+    <string name="accent_color">Accent picker</string>
+    <string name="accent_summary">System wide accent maker</string>
 
     <!-- Additional stuff -->
     <string name="dialog_color_picker">Color Picker</string>
