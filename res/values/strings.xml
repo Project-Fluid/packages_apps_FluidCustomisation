@@ -94,4 +94,8 @@
     <string name="accent_prebuilt">Accent color - Prebuilt</string>
     <string name="accent_prebuilt_summary">Pick an accent color from our predone selections!</string>
 
+    <!-- FOD animations -->
+    <string name="fod_recog_animation">FOD recognizing animation</string>
+    <string name="fod_recog_animation_summary">Shows animation while reading your finger</string>
+
 </resources>
