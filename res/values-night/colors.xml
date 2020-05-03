@@ -15,7 +15,9 @@
 -->
 
 <resources>
-
+        <!-- Previews -->
         <color name="preview_container_border">#14FFFFFF</color>
         <color name="iconcol">#FFFFFF</color>
+        <!-- Accents -->
+        <color name="fluid_default_accent_color">@*android:color/accent_device_default_dark</color>
 </resources>
