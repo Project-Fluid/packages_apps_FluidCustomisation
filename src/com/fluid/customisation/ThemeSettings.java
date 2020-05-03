@@ -34,6 +34,7 @@ import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.search.SearchIndexable;
 
 import com.fluid.customisation.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -67,6 +68,7 @@ public class ThemeSettings extends DashboardFragment implements Indexable  {
     private static List<AbstractPreferenceController> buildPreferenceControllers(
             Context context, Lifecycle lifecycle, Fragment fragment) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
+        controllers.add(new AccentColorPreferenceController(context));
         controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.font"));
         controllers.add(new CustomOverlayPreferenceController(context,
