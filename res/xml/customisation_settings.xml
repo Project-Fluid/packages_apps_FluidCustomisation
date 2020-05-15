@@ -20,5 +20,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/fluid_settings_title" >
 
+        <Preference
+            android:key="statusbar_category"
+            android:title="@string/statusbar_title"
+            android:fragment="com.fluid.customisation.fragments.StatusBarSettings"
+            android:icon="@drawable/ic_settings_statusbar"/>
 
 </PreferenceScreen>

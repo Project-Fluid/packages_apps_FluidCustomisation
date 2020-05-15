@@ -17,4 +17,10 @@
 -->
 <resources>
 
+    <!-- Dashboard tile minimum height -->
+    <dimen name="dashboard_tile_minimum_height">72dp</dimen>
+
+    <!-- Dashboard tile image margin start / end -->
+    <dimen name="dashboard_tile_image_margin">18dp</dimen>
+
 </resources>

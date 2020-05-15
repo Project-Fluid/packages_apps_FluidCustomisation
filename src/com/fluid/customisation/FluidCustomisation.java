@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.fluid.customisation.FluidCustomisation;
+package com.fluid.customisation;
 
 import com.android.internal.logging.nano.MetricsProto;
 
