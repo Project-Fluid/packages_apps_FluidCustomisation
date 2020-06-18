@@ -20,5 +20,6 @@
     <string name="customisation_settings_title">Fluid Customisations</string>
 
     <!-- Customization titles -->
-    <string name="statusbar_title">StatusBar</string>
+    <string name="statusbar_title">Statusbar</string>
+    <string name="quicksettings_title">Quick Settings</string>
 </resources>

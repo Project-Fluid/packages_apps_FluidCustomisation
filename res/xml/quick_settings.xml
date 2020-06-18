@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2020 ProjectTitanium
-     ProjectFluid
+     Copyright (C) 2020 FluidProject
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -18,18 +17,6 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/fluid_settings_title" >
+    android:title="@string/quicksettings_title" >
 
-        <PreferenceScreen
-            android:key="statusbar_category"
-            android:title="@string/statusbar_title"
-            android:fragment="com.fluid.customisation.fragments.StatusBarSettings"
-            android:layout="@layout/preference_statusbarsettings"/>
-
-        <!-- Quick Settings -->
-        <PreferenceScreen
-            android:id="@+id/quick_settings"
-            android:title="@string/quicksettings_title"
-            android:fragment="com.fluid.customisation.QuickSettings"
-            android:layout="@layout/preference_quicksettings" />
 </PreferenceScreen>
