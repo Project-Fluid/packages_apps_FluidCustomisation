@@ -38,7 +38,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SearchIndexable
-public class uistyles extends DashboardFragment implements Indexable  {
+public class ThemeSettings extends DashboardFragment implements Indexable  {
     private static final String TAG = "Themes";
 
     @Override
@@ -68,6 +68,8 @@ public class uistyles extends DashboardFragment implements Indexable  {
                 "android.theme.customization.font"));
         controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.adaptive_icon_shape"));
+        controllers.add(new OverlayCategoryPreferenceController(context,
+                "android.theme.customization.icon_pack.android"));
         return controllers;
     }
 

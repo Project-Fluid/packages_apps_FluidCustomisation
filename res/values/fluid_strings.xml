@@ -26,4 +26,5 @@
 
     <!-- Customization titles -->
     <string name="themes_ui">UI</string>
+    <string name="theme_customization_sysui_icon_title">Statusbar icon</string>
 </resources>
