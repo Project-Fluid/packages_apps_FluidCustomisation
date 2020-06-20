@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2020 ProjectTitanium
+     Copyright (C) 2020 The "Best Improved Cherry-Picked Rom" Project
      Copyright (C) 2020 ProjectFluid
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,11 @@
     <!-- App Title -->
     <string name="customisation_settings_title">Fluid Customisations</string>
 
-    <!-- Customization titles -->
+    <!-- Customization section titles -->
     <string name="statusbar_title">Statusbar</string>
     <string name="quicksettings_title">Quick Settings</string>
+    <string name="themes_title">Themes</string>
+
+    <!-- Customization titles -->
+    <string name="themes_ui">UI</string>
 </resources>

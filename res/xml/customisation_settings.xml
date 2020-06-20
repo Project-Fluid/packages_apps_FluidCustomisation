@@ -20,6 +20,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/fluid_settings_title" >
 
+        <!-- Statusbar Settings -->
         <PreferenceScreen
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
@@ -32,4 +33,12 @@
             android:title="@string/quicksettings_title"
             android:fragment="com.fluid.customisation.QuickSettings"
             android:layout="@layout/preference_quicksettings" />
+
+        <!-- Themes -->
+        <PreferenceScreen
+            android:id="@+id/themes_settings"
+            android:title="@string/themes_title"
+            android:fragment="com.fluid.customisation.ThemeSettings"
+            android:layout="@layout/preference_themes" />
+
 </PreferenceScreen>
