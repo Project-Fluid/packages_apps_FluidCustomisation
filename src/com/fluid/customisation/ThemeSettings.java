@@ -50,6 +50,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
+import com.fluid.customisation.etc.CustomOverlayPreferenceController;
 
 @SearchIndexable
 public class ThemeSettings extends DashboardFragment implements Indexable, OnPreferenceChangeListener  {
@@ -121,6 +122,8 @@ public class ThemeSettings extends DashboardFragment implements Indexable, OnPre
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.font"));
+        controllers.add(new CustomOverlayPreferenceController(context,
+                "android.theme.customization.custom_overlays"));
         controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.adaptive_icon_shape"));
         controllers.add(new OverlayCategoryPreferenceController(context,
