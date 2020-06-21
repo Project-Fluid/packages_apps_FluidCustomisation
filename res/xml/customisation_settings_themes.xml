@@ -22,6 +22,19 @@
     settings:initialExpandedChildrenCount="4">
 
     <PreferenceCategory
+        android:key="theme_customization_category_base"
+        android:title="@string/themes_base">
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="accent_color"
+        android:title="@string/accent_color"
+        android:summary="@string/accent_summary"
+        android:defaultValue="0x72BBFF"
+        android:persistent="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="theme_customization_category"
         android:title="@string/themes_ui">
 

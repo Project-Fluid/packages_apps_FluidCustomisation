@@ -17,11 +17,23 @@
 package com.fluid.customisation;
 
 import android.content.Context;
+import android.content.res.Resources;
+import android.content.om.IOverlayManager;
+import android.content.om.OverlayInfo;
+import android.graphics.Color;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
+import android.os.Bundle;
+import android.os.RemoteException;
+import android.os.SystemProperties;
+import android.os.ServiceManager;
+import android.os.UserHandle;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
+import androidx.preference.Preference.OnPreferenceChangeListener;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
@@ -37,9 +49,16 @@ import com.fluid.customisation.R;
 import java.util.ArrayList;
 import java.util.List;
 
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
+
 @SearchIndexable
-public class ThemeSettings extends DashboardFragment implements Indexable  {
+public class ThemeSettings extends DashboardFragment implements Indexable, OnPreferenceChangeListener  {
     private static final String TAG = "Themes";
+    private static final String ACCENT_COLOR = "accent_color";
+    private static final String ACCENT_COLOR_PROP = "persist.sys.theme.accentcolor";
+
+    private IOverlayManager mOverlayService;
+    private ColorPickerPreference mThemeColor;
 
     @Override
     public int getMetricsCategory() {
@@ -59,6 +78,42 @@ public class ThemeSettings extends DashboardFragment implements Indexable  {
     @Override
     protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         return buildPreferenceControllers(context, getSettingsLifecycle(), this);
+    }
+
+    @Override
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
+
+//        addPreferencesFromResource(R.xml.customisation_settings_themes);
+        mOverlayService = IOverlayManager.Stub
+                .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
+        setupAccentPref();
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        if (preference == mThemeColor) {
+            int color = (Integer) objValue;
+            String hexColor = String.format("%08X", (0xFFFFFFFF & color));
+            SystemProperties.set(ACCENT_COLOR_PROP, hexColor);
+            try {
+                 mOverlayService.reloadAndroidAssets(UserHandle.USER_CURRENT);
+                 mOverlayService.reloadAssets("com.android.settings", UserHandle.USER_CURRENT);
+                 mOverlayService.reloadAssets("com.android.systemui", UserHandle.USER_CURRENT);
+             } catch (RemoteException ignored) {
+             }
+        }
+        return true;
+    }
+
+    private void setupAccentPref() {
+        mThemeColor = (ColorPickerPreference) findPreference(ACCENT_COLOR);
+        String colorVal = SystemProperties.get(ACCENT_COLOR_PROP, "-1");
+        int color = "-1".equals(colorVal)
+                ? Color.WHITE
+                : Color.parseColor("#" + colorVal);
+        mThemeColor.setNewPreviewColor(color);
+        mThemeColor.setOnPreferenceChangeListener(this);
     }
 
     private static List<AbstractPreferenceController> buildPreferenceControllers(
