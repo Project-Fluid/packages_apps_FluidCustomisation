@@ -20,6 +20,9 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/themes_title" >
 
+    <ListPreference
+	android:layout="@layout/base_preview" />
+
     <PreferenceCategory
         android:key="theme_customization_category_base"
         android:title="@string/themes_base">
@@ -36,6 +39,9 @@
             android:title="@string/theme_customization_systemui_title" />
 
     </PreferenceCategory>
+
+    <ListPreference
+        android:layout="@layout/font_preview" />
 
     <PreferenceCategory
         android:key="theme_customization_category"
