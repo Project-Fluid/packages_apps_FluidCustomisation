@@ -27,4 +27,10 @@
         android:fragment="com.fluid.customisation.ClockSettings"
         android:icon="@drawable/ic_settings_clock" />
 
+        <Preference
+        android:key="traffic_settings"
+        android:title="@string/network_traffic_title"
+        android:summary="@string/network_traffic_summary"
+        android:fragment="com.fluid.customisation.fragments.TrafficSettings"
+        android:icon="@drawable/ic_settings_traffic" />
 </PreferenceScreen>
