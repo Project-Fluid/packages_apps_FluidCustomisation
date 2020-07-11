@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2020 ProjectTitanium
-     ProjectFluid
+     Copyright (C) 2020 ProjectFluid
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -24,6 +23,7 @@
         <PreferenceScreen
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
+            android:summary="@string/statusbar_summary"
             android:fragment="com.fluid.customisation.fragments.StatusBarSettings"
             android:layout="@layout/preference_statusbarsettings"/>
 
@@ -31,6 +31,7 @@
         <PreferenceScreen
             android:id="@+id/quick_settings"
             android:title="@string/quicksettings_title"
+            android:summary="@string/quicksettings_summary"
             android:fragment="com.fluid.customisation.QuickSettings"
             android:layout="@layout/preference_quicksettings" />
 
@@ -38,6 +39,7 @@
         <PreferenceScreen
             android:id="@+id/themes_settings"
             android:title="@string/themes_title"
+            android:summary="@string/themess_summary"
             android:fragment="com.fluid.customisation.ThemeSettings"
             android:layout="@layout/preference_themes" />
 
