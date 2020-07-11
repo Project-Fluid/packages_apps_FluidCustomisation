@@ -1,5 +1,4 @@
 /*
- * Copyright (C) 2019 ProjectTitanium
  * Copyright (C) 2020 ProjectFluid
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.fluid.customisation.fragments;
+package com.fluid.customisation;
 
 import android.content.Context;
 import android.content.ContentResolver;

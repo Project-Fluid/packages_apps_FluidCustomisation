@@ -24,7 +24,7 @@
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
             android:summary="@string/statusbar_summary"
-            android:fragment="com.fluid.customisation.fragments.StatusBarSettings"
+            android:fragment="com.fluid.customisation.StatusBarSettings"
             android:layout="@layout/preference_statusbarsettings"/>
 
         <!-- Quick Settings -->

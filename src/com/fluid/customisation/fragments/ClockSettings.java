@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fluid.customisation;
+package com.fluid.customisation.fragments;
 
 import android.app.AlertDialog;
 import android.content.ContentResolver;
