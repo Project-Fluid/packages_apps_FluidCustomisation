@@ -25,9 +25,9 @@
     <string name="themes_title">Themes</string>
 
     <!-- Customization section summaries -->
-    <string name="statusbar_summary">All kinds of stuff releated to statusbar</string>
-    <string name="quicksettings_summary">Customize your quick settings</string>
-    <string name="themess_summary">Customise your device with the inbuilt themes</string>
+    <string name="statusbar_summary">Clock, Network indicator</string>
+    <string name="quicksettings_summary">Tile rows, column count</string>
+    <string name="themess_summary">Accents, fonts, background</string>
 
     <!-- Customization titles -->
     <string name="themes_ui">UI</string>
