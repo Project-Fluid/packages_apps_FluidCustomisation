@@ -40,4 +40,13 @@
         android:summary="@string/signal_summary"
         android:fragment="com.fluid.customisation.fragments.SignalSettings"
         android:icon="@drawable/ic_settings_signal" />
+
+	<Preference
+            android:title="@string/statusbar_items_title"
+            android:summary="@string/statusbar_items_summary"
+            android:icon="@drawable/ic_settings_tuner" >
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
+        </Preference>
 </PreferenceScreen>
