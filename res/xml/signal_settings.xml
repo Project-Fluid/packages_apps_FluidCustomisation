@@ -19,4 +19,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/signal_title" >
 
+         <com.fluid.customisation.preference.SystemSettingSwitchPreference
+             android:key="show_fourg_icon"
+             android:title="@string/show_fourg_icon_title"
+             android:summary="@string/show_fourg_icon_summary"
+             android:defaultValue="false"/>
+
 </PreferenceScreen>

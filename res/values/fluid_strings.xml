@@ -96,6 +96,8 @@
     <string name="nettraf_font_size">Single net font size</string>
     <string name="signal_title">Signal Indicator Settings</string>
     <string name="signal_summary">Signal Indicator releated stuff</string>
+    <string name="show_fourg_icon_title">4G icon</string>
+    <string name="show_fourg_icon_summary">Display 4G icon in signal icon instead LTE</string>
 
     <!-- Additional stuff -->
     <string name="dialog_color_picker">Color Picker</string>
