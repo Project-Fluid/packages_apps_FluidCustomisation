@@ -33,4 +33,11 @@
         android:summary="@string/network_traffic_summary"
         android:fragment="com.fluid.customisation.fragments.TrafficSettings"
         android:icon="@drawable/ic_settings_traffic" />
+
+        <Preference
+        android:key="signal_settings"
+        android:title="@string/signal_title"
+        android:summary="@string/signal_summary"
+        android:fragment="com.fluid.customisation.fragments.SignalSettings"
+        android:icon="@drawable/ic_settings_signal" />
 </PreferenceScreen>

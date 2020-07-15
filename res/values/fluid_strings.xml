@@ -94,6 +94,8 @@
     <string name="show_network_traffic_down">Download</string>
     <string name="show_network_traffic_all">Both</string>
     <string name="nettraf_font_size">Single net font size</string>
+    <string name="signal_title">Signal Indicator Settings</string>
+    <string name="signal_summary">Signal Indicator releated stuff</string>
 
     <!-- Additional stuff -->
     <string name="dialog_color_picker">Color Picker</string>
