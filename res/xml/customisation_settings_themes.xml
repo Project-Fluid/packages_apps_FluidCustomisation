@@ -59,6 +59,14 @@
             android:key="android.theme.customization.icon_pack.android"
             android:title="@string/theme_customization_android_icon_title"/>
 
+	<ListPreference
+            android:key="android.theme.customization.icon_pack.systemui"
+            android:title="@string/theme_customization_sysui_icon_title"/>
+
+	<ListPreference
+            android:key="android.theme.customization.icon_pack.settings"
+            android:title="@string/theme_customization_settings_icon_title"/>
+
     </PreferenceCategory>
 
 </PreferenceScreen>

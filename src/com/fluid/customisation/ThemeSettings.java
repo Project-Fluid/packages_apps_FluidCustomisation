@@ -128,6 +128,10 @@ public class ThemeSettings extends DashboardFragment implements Indexable, OnPre
                 "android.theme.customization.adaptive_icon_shape"));
         controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.icon_pack.android"));
+	controllers.add(new OverlayCategoryPreferenceController(context,
+                "android.theme.customization.icon_pack.systemui"));
+	controllers.add(new OverlayCategoryPreferenceController(context,
+                "android.theme.customization.icon_pack.settings"));
         return controllers;
     }
 
