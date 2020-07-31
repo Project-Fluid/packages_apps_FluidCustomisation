@@ -16,7 +16,7 @@
 
 <resources>
 
-	<!-- Preview Icons -->
-	<color name="preview_icon_shape_color">@*android:color/accent_device_default_light</color>
-        <color name="wave-background">@*android:color/background_device_default_light</color>
+	<!-- Previews -->
+	<color name="preview_container_border">#ECECEC</color>
+
 </resources>

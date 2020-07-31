@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    Copyright (C) 2019-2020 The Evolution X Project
+     Copyright (C) 2020 ProjectFluid
 
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
 
-         http://www.apache.org/licenses/LICENSE-2.0
+          http://www.apache.org/licenses/LICENSE-2.0
 
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
 -->
 
 <PreferenceScreen
@@ -20,52 +20,50 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/themes_title" >
 
-    <ListPreference
-	android:layout="@layout/base_preview" />
+   <ListPreference
+       android:key="android.theme.customization.custom_overlays"
+       android:title="@string/theme_customization_systemui_title"
+       android:icon="@drawable/ic_base_theme" />
 
     <PreferenceCategory
         android:key="theme_customization_category_base"
-        android:title="@string/themes_base">
-
-    <net.margaritov.preference.colorpicker.ColorPickerPreference
-        android:key="accent_color"
-        android:title="@string/accent_color"
-        android:summary="@string/accent_summary"
-        android:defaultValue="0x72BBFF"
-        android:persistent="false" />
+        android:title="@string/themes_base" >
 
         <ListPreference
-            android:key="android.theme.customization.custom_overlays"
-            android:title="@string/theme_customization_systemui_title" />
+            android:layout="@layout/accents_shapes_base_preview"
+            android:selectable="false" />
 
-    </PreferenceCategory>
-
-    <ListPreference
-        android:layout="@layout/font_preview" />
-
-    <PreferenceCategory
-        android:key="theme_customization_category"
-        android:title="@string/themes_ui">
-
-        <ListPreference
-            android:key="android.theme.customization.font"
-            android:title="@string/theme_customization_font_title"/>
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="accent_color"
+            android:title="@string/accent_color"
+            android:summary="@string/accent_summary"
+            android:defaultValue="0x72BBFF"
+            android:persistent="false"
+            android:icon="@drawable/ic_accent_picker" />
 
         <ListPreference
             android:key="android.theme.customization.adaptive_icon_shape"
-            android:title="@string/theme_customization_icon_shape_title"/>
+            android:title="@string/theme_customization_icon_shape_title"
+            android:icon="@drawable/ic_icon_shape" />
+
+        <ListPreference
+            android:key="android.theme.customization.icon_pack.systemui"
+            android:title="@string/theme_customization_sysui_icon_title"
+            android:shouldDisableView="false"
+            android:icon="@drawable/ic_stat_icons" />
 
         <ListPreference
             android:key="android.theme.customization.icon_pack.android"
-            android:title="@string/theme_customization_android_icon_title"/>
+            android:title="@string/theme_customization_android_icon_title" />
 
-	<ListPreference
-            android:key="android.theme.customization.icon_pack.systemui"
-            android:title="@string/theme_customization_sysui_icon_title"/>
+        <ListPreference
+            android:layout="@layout/fonts_base_preview"
+            android:selectable="false" />
 
-	<ListPreference
-            android:key="android.theme.customization.icon_pack.settings"
-            android:title="@string/theme_customization_settings_icon_title"/>
+        <ListPreference
+            android:key="android.theme.customization.font"
+            android:title="@string/theme_customization_font_title"
+            android:icon="@drawable/ic_font"/>
 
     </PreferenceCategory>
 
