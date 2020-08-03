@@ -105,6 +105,8 @@
     <string name="statusbar_items_summary">Toggle the visibility of icons in statusbar</string>
     <string name="accent_color">Accent color - RGB picker</string>
     <string name="accent_summary">Choose your own accent!</string>
+    <string name="clock_style_title">Clock Styles</string>
+    <string name="clock_style_summary">Customize your lockscreen clock</string>
 
     <!-- Additional stuff -->
     <string name="dialog_color_picker">Color Picker</string>
