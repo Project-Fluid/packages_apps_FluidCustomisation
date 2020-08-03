@@ -17,5 +17,5 @@
 <resources>
 
         <color name="preview_container_border">#14FFFFFF</color>
-
+        <color name="iconcol">#FFFFFF</color>
 </resources>

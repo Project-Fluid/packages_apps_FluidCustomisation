@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 ProjectFluid
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0"
+    android:tint="@color/iconcol" >
+
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M12.5 12.3L15.6 14.1C15.2 14.4 14.8 14.7 14.5 15.1L11 13V7H12.5V12.3Z" />
+
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M13.1 19.9C12.7 20 12.4 20 12 20C7.6 20 4 16.4 4 12C4 7.6 7.6 4 12 4C16.4 4 20 7.6 20 12C20 12.4 20 12.7 19.9 13.1C20.6 13.2 21.2 13.4 21.8 13.7C21.9 13.1 22 12.6 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C12.6 22 13.2 21.9 13.7 21.8C13.4 21.3 13.2 20.6 13.1 19.9Z" />
+
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M14.8217 19.9027C14.7762 19.8136 14.8035 19.7067 14.8855 19.6443V19.671L15.7966 19.0115C15.7875 18.8778 15.7875 18.7441 15.7966 18.6104C15.7784 18.4767 15.7784 18.343 15.7966 18.2093L14.8855 17.5498C14.8126 17.4874 14.7853 17.3804 14.8309 17.2735L15.6599 15.9365C15.7055 15.8385 15.8239 15.7939 15.9241 15.8296L16.9719 16.2039C17.1814 16.0435 17.4274 15.9098 17.6643 15.8028L17.8192 14.7511C17.8374 14.662 17.9194 14.5996 18.0105 14.5996H19.614C19.7051 14.5996 19.8053 14.6709 19.8235 14.769L19.9784 15.8296C20.2244 15.9365 20.4613 16.0524 20.6799 16.2039L21.7003 15.8028C21.8006 15.7672 21.9008 15.8028 21.9554 15.892L22.7754 17.2735C22.821 17.3715 22.8027 17.4695 22.7207 17.5319L21.8097 18.2093C21.837 18.4767 21.837 18.7441 21.8097 19.0115L22.7207 19.671C22.7936 19.7334 22.821 19.8403 22.7754 19.9473L21.9554 21.2842C21.9099 21.3823 21.8006 21.4268 21.7003 21.3912L20.6799 20.9901C20.4704 21.1505 20.2335 21.2842 19.9875 21.3912L19.8235 22.4429C19.8053 22.5409 19.7051 22.6211 19.614 22.5944H17.9741C17.8829 22.5944 17.7918 22.5231 17.7736 22.4251L17.6096 21.3644C17.3727 21.2575 17.145 21.1327 16.9263 20.9901L15.8968 21.3912C15.8057 21.3912 15.6964 21.3912 15.6417 21.2842L14.8217 19.9027ZM17.4274 18.6104C17.4274 19.3412 18.0287 19.9473 18.794 19.9473C19.5502 19.9473 20.1606 19.3501 20.1606 18.6104C20.1606 17.8706 19.5502 17.2735 18.794 17.2735C18.0378 17.2735 17.4274 17.8706 17.4274 18.6104Z" />
+</vector>
