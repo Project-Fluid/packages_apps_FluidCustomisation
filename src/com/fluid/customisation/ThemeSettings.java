@@ -38,6 +38,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.fluid.customisation.etc.CustomOverlayPreferenceController;
+import com.fluid.customisation.etc.AccentColorPreferenceController;
 
 @SearchIndexable
 public class ThemeSettings extends DashboardFragment implements Indexable  {
