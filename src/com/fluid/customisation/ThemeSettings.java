@@ -70,6 +70,8 @@ public class ThemeSettings extends DashboardFragment implements Indexable  {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new AccentColorPreferenceController(context));
         controllers.add(new OverlayCategoryPreferenceController(context,
+                "android.theme.customization.accent_color"));
+        controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.font"));
         controllers.add(new CustomOverlayPreferenceController(context,
                 "android.theme.customization.custom_overlays"));
