@@ -111,6 +111,8 @@
     <string name="accent_prebuilt_summary">Pick your favorite accent color</string>
     <string name="clock_style_title">Clock Styles</string>
     <string name="clock_style_summary">Customize your lockscreen clock</string>
+    <string name="navbar_invert_layout_title">Invert layout</string>
+    <string name="navbar_invert_layout_summary">Use inverted layout for navbar buttons</string>
 
     <!-- Additional stuff -->
     <string name="dialog_color_picker">Color Picker</string>

@@ -17,6 +17,7 @@ package com.fluid.customisation;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.ContentResolver;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.UserHandle;
@@ -43,17 +44,41 @@ import java.util.List;
 public class NavigationSettings extends SettingsPreferenceFragment implements
         Indexable, Preference.OnPreferenceChangeListener {
 
+    private static final String NAV_BAR_LAYOUT = "nav_bar_layout";
+    private static final String SYSUI_NAV_BAR = "sysui_nav_bar";
+
+    private ListPreference mNavBarLayout;
+    private ContentResolver mResolver;
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.customisation_settings_navigation);
+        ContentResolver resolver = getActivity().getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        mNavBarLayout = (ListPreference) findPreference(NAV_BAR_LAYOUT);
+        mNavBarLayout.setOnPreferenceChangeListener(this);
+        String navBarLayoutValue = Settings.Secure.getString(mResolver, SYSUI_NAV_BAR);
+        if (navBarLayoutValue != null) {
+            mNavBarLayout.setValue(navBarLayoutValue);
+        } else {
+            mNavBarLayout.setValueIndex(0);
+        }
 
     }
 
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.FLUID;
+    }
+
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mNavBarLayout) {
+            Settings.Secure.putString(mResolver, SYSUI_NAV_BAR, (String) newValue);
+            return true;
+        }
+        return false;
     }
 
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
