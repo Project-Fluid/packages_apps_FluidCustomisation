@@ -114,6 +114,8 @@
     <string name="navbar_invert_layout_title">Invert layout</string>
     <string name="navbar_invert_layout_summary">Use inverted layout for navbar buttons</string>
     <string name="nav_bar_layout">Navbar layout</string>
+    <string name="enable_clear_all_button">Clear all notifications FAB</string>
+    <string name="enable_clear_all_button_summary">Show clear all notifications button in QS</string>
 
     <!-- Additional stuff -->
     <string name="dialog_color_picker">Color Picker</string>
