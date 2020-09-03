@@ -74,6 +74,7 @@ public class NavigationSettings extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+    	ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mNavBarLayout) {
             Settings.Secure.putString(mResolver, SYSUI_NAV_BAR, (String) newValue);
             return true;
