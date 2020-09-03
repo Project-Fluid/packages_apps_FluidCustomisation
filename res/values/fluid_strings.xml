@@ -23,11 +23,13 @@
     <string name="statusbar_title">Statusbar</string>
     <string name="quicksettings_title">Quick Settings</string>
     <string name="themes_title">Themes</string>
+    <string name="navigation_title">Navigation Bar</string>
 
     <!-- Customization section summaries -->
     <string name="statusbar_summary">Clock, Network indicator</string>
     <string name="quicksettings_summary">Tile rows, column count</string>
     <string name="themess_summary">Accents, fonts, background</string>
+    <string name="navigation_summary">Layout, invert, tuner</string>
 
     <!-- Customization titles -->
     <string name="themes_base">System Customisation</string>

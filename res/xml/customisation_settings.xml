@@ -19,6 +19,14 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/fluid_settings_title" >
 
+        <!-- Themes -->
+        <PreferenceScreen
+            android:id="@+id/themes_settings"
+            android:title="@string/themes_title"
+            android:summary="@string/themess_summary"
+            android:fragment="com.fluid.customisation.ThemeSettings"
+            android:layout="@layout/preference_themes" />
+
         <!-- Statusbar Settings -->
         <PreferenceScreen
             android:key="statusbar_category"
@@ -35,12 +43,12 @@
             android:fragment="com.fluid.customisation.QuickSettings"
             android:layout="@layout/preference_quicksettings" />
 
-        <!-- Themes -->
+        <!-- Navigation -->
         <PreferenceScreen
-            android:id="@+id/themes_settings"
-            android:title="@string/themes_title"
-            android:summary="@string/themess_summary"
-            android:fragment="com.fluid.customisation.ThemeSettings"
-            android:layout="@layout/preference_themes" />
+            android:id="@+id/navigation_settings"
+            android:title="@string/navigation_title"
+            android:summary="@string/navigation_summary"
+            android:fragment="com.fluid.customisation.NavigationSettings"
+            android:layout="@layout/preference_navigation" />
 
 </PreferenceScreen>
