@@ -25,4 +25,12 @@
         android:summary="@string/navbar_invert_layout_summary"
         android:defaultValue="false" />
 
+    <ListPreference
+        android:key="nav_bar_layout"
+        android:title="@string/nav_bar_layout"
+        android:summary="%s"
+        android:defaultValue="default"
+        android:persistent="false"
+        android:entries="@array/nav_bar_layouts"
+        android:entryValues="@array/nav_bar_layouts_values" />
 </PreferenceScreen>

@@ -113,6 +113,7 @@
     <string name="clock_style_summary">Customize your lockscreen clock</string>
     <string name="navbar_invert_layout_title">Invert layout</string>
     <string name="navbar_invert_layout_summary">Use inverted layout for navbar buttons</string>
+    <string name="nav_bar_layout">Navbar layout</string>
 
     <!-- Additional stuff -->
     <string name="dialog_color_picker">Color Picker</string>
