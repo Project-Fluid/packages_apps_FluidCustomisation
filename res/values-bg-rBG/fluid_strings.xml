@@ -21,7 +21,7 @@
     <!-- Customization section titles -->
     <string name="statusbar_title">Statusbar</string>
     <string name="quicksettings_title">Quick Settings</string>
-    <string name="themes_title">Themes</string>
+    <string name="themes_title">Теми</string>
     <!-- Customization section summaries -->
     <string name="statusbar_summary">Clock, Network indicator</string>
     <string name="quicksettings_summary">Tile rows, column count</string>
