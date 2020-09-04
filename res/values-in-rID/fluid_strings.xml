@@ -44,7 +44,7 @@
     <string name="status_bar_clock_style_left">Kiri</string>
     <string name="status_bar_am_pm_title">Gaya AM/PM</string>
     <string name="status_bar_am_pm_info">24-jam Sudah Aktif</string>
-    <string name="status_bar_am_pm_normal">Normal</string>
+    <string name="status_bar_am_pm_normal">Biasa</string>
     <string name="status_bar_am_pm_small">Kecil</string>
     <string name="status_bar_am_pm_hidden">Sembunyikan (standar)</string>
     <string name="clock_seconds_display">Tampilkan Detik</string>
@@ -54,7 +54,7 @@
     <string name="clock_date_display_small">Ukuran Fon Kecil</string>
     <string name="clock_date_display_normal">Ukuran Fon Normal</string>
     <string name="clock_date_style">Gaya Tanggal</string>
-    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_normal">Biasa</string>
     <string name="clock_date_style_lowercase">Huruf Kecil</string>
     <string name="clock_date_style_uppercase">Huruf Besar</string>
     <string name="clock_date_format_custom">Format Java Kustom</string>
@@ -86,8 +86,8 @@
     <string name="network_traffic_type">Pilih Tipe Aktifitas Jaringan</string>
     <string name="show_network_traffic_combined">Gabungan (Upload + Download)</string>
     <string name="show_network_traffic_dynamic">Dinamis</string>
-    <string name="show_network_traffic_up">Upload</string>
-    <string name="show_network_traffic_down">Download</string>
+    <string name="show_network_traffic_up">Unggah</string>
+    <string name="show_network_traffic_down">Unduh</string>
     <string name="show_network_traffic_all">Keduanya</string>
     <string name="nettraf_font_size">Ukuran Fon Sebaris</string>
     <string name="signal_title">Indikator Sinyal</string>
