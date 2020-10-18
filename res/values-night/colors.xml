@@ -19,4 +19,6 @@
     <color name="bottom_bar_divider_color">#13FFFFFF</color>
     <color name="bottom_navigation_color">@*android:color/secondary_device_default_settings</color>
     <color name="bottom_navigation_ripple">#13FFFFFF</color>
+
+    <color name="iconcol">#FFFFFF</color>
 </resources>

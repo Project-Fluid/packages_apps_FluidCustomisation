@@ -19,4 +19,6 @@
     <color name="bottom_bar_divider_color">#1f000000</color>
     <color name="bottom_navigation_color">#FFFFFF</color>
     <color name="bottom_navigation_ripple">#1f000000</color>
+
+    <color name="iconcol">#121212</color>
 </resources>
