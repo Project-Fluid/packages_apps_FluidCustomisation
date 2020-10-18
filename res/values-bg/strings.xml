@@ -29,5 +29,7 @@
     <!-- Customization Titles -->
     <string name="volume_rocker_music_controls_title">Контролиране на музика</string>
     <string name="volume_rocker_music_controls_summary">Когато екрана е изключен, задържете бутоните за звук за да сменяте песни</string>
+    <string name="volume_rocker_wake_title">Събуждане с бутоните за звук</string>
+    <string name="volume_rocker_wake_summary">Натискане на бутоните за звук токато екрана е изключен ще събуди устройството</string>
 </resources>
 
