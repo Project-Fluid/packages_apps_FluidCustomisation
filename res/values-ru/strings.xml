@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2020 Fluid
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- App name -->
+    <string name="customisation_settings_title">Fluid Customisation</string>
+
+    <!-- Customization Section Titles -->
+    <string name="customisation_themes">Themes</string>
+    <string name="customisation_statusbar">Status Bar</string>
+    <string name="customisation_qs">QS</string>
+    <string name="customisation_navigation">Navigation</string>
+    <string name="customisation_extras">Extras</string>
+
+    <!-- Customization Titles -->
+    <string name="volume_rocker_music_controls_title">Управление плеером</string>
+    <string name="volume_rocker_music_controls_summary">Переключать треки долгим нажатием кнопок громкости при выключенном экране</string>
+</resources>
