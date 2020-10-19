@@ -31,5 +31,7 @@
     <string name="volume_rocker_music_controls_summary">Когато екрана е изключен, задържете бутоните за звук за да сменяте песни</string>
     <string name="volume_rocker_wake_title">Събуждане с бутоните за звук</string>
     <string name="volume_rocker_wake_summary">Натискане на бутоните за звук токато екрана е изключен ще събуди устройството</string>
+    <string name="show_fourg_title">Показвай 4G вместо LTE</string>
+    <string name="show_fourg_summary">Замества LTE индикатор с 4G</string>
 </resources>
 
