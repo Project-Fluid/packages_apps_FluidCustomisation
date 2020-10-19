@@ -41,5 +41,7 @@
     <string name="double_tap_sleep_gesture_summary">Натиснете два пъти на статусбара за да изключите екрана</string>
     <string name="double_tap_sleep_lockscreen_title">Двойно натискане за спане на заключен екран</string>
     <string name="double_tap_sleep_lockscreen_summary">Натиснете два пъти в заключения екран за да изключите екрана</string>
+    <string name="use_old_mobiletype_title">Стари мобилни данни индикатори</string>
+    <string name="use_old_mobiletype_summary">Използвай стари мобилни данни индикатори от орео (Рестартиране е нужно)</string>
 </resources>
 

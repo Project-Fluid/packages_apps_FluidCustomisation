@@ -41,4 +41,6 @@
     <string name="double_tap_sleep_gesture_summary">Double tap on the status bar to put the device to sleep</string>
     <string name="double_tap_sleep_lockscreen_title">Double tap to sleep</string>
     <string name="double_tap_sleep_lockscreen_summary">Double tap anywhere on the lockscreen to put phone to sleep</string>
+    <string name="use_old_mobiletype_title">Use old style mobile data icons</string>
+    <string name="use_old_mobiletype_summary">Use pre-p mobiletype icons for signal (Reboot required)</string>
 </resources>
