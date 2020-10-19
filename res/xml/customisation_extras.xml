@@ -31,4 +31,10 @@
             android:title="@string/volume_rocker_wake_title"
             android:defaultValue="false" />
 
+    <com.fluid.customisation.preference.SystemSettingSwitchPreference
+        android:key="lockscreen_battery_info"
+        android:title="@string/lockscreen_battery_info_title"
+        android:summary="@string/lockscreen_battery_info_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>

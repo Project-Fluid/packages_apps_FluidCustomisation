@@ -35,5 +35,7 @@
     <string name="show_fourg_summary">Замества LTE индикатор с 4G</string>
     <string name="volte_switch_title">VoLTE икона</string>
     <string name="volte_switch_summary">Покажи VoLTE икона в статусбара</string>
+    <string name="lockscreen_battery_info_title">Инфо за зареждане на заключен екран</string>
+    <string name="lockscreen_battery_info_summary">Показвай инфо за заряда на заключения екран</string>
 </resources>
 

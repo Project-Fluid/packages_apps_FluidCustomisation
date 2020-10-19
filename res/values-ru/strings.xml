@@ -34,4 +34,6 @@
     <string name="show_fourg_summary">Заменить LTE индикатор в статусбаре на 4G</string>
     <string name="volte_switch_title">Иконка VoLTE</string>
     <string name="volte_switch_summary">Отображать иконку VoLTE в статусбаре</string>
+    <string name="lockscreen_battery_info_title">Информация о зарядке</string>
+    <string name="lockscreen_battery_info_summary">Отображение тока зарядки, вольтажа, температуры батареи на экране блокировки</string>
 </resources>
