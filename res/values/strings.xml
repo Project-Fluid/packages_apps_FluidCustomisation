@@ -35,6 +35,8 @@
     <string name="show_fourg_summary">Replaces LTE statusbar indicators with 4G</string>
     <string name="volte_switch_title">VoLTE icon</string>
     <string name="volte_switch_summary">Display VoLTE icon</string>
+    <string name="data_disabled_icon_title">Data disabled icon</string>
+    <string name="data_disabled_icon_summary">Display a cross sign next to signal bar when data is disabled</string>
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
     <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage and battery temperature on lockscreen while charging</string>
     <string name="double_tap_sleep_gesture_title">Double tap to sleep</string>
