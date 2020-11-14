@@ -43,5 +43,7 @@
     <string name="double_tap_sleep_lockscreen_summary">Натиснете два пъти в заключения екран за да изключите екрана</string>
     <string name="use_old_mobiletype_title">Стари мобилни данни индикатори</string>
     <string name="use_old_mobiletype_summary">Използвай стари мобилни данни индикатори от орео (Рестартиране е нужно)</string>
+    <string name="quick_settings_vibrate_title">Вибрация на натиск</string>
+    <string name="quick_settings_vibrate_summary">Сигнал с вибрация когато бърза настройка е сменена</string>
 </resources>
 
