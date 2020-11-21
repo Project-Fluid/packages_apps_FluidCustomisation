@@ -91,6 +91,7 @@
     <string name="theme_customization_sysui_icon_title">System Theme</string>
     <string name="clock_style_title">Lockscreen lock</string>
     <string name="clock_style_summary">Customize your lockscreen clock</string>
+    <string name="rgb_accent">RGB color picker</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
