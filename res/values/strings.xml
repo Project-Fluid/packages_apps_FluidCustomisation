@@ -89,6 +89,8 @@
     <!-- Theming -->
     <string name="themes_ui">UI</string>
     <string name="theme_customization_sysui_icon_title">System Theme</string>
+    <string name="clock_style_title">Lockscreen lock</string>
+    <string name="clock_style_summary">Customize your lockscreen clock</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
