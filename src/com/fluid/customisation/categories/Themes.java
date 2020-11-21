@@ -72,6 +72,8 @@ public class Themes extends SettingsPreferenceFragment implements Preference.OnP
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new AccentColorPreferenceController(context));
         controllers.add(new OverlayCategoryPreferenceController(context,
+                "android.theme.customization.accent_color"));
+        controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.font"));
         controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.adaptive_icon_shape"));

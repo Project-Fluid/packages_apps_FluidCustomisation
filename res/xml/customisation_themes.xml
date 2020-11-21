@@ -25,6 +25,11 @@
             settings:defaultColorValue="0x72BBFF"
             android:persistent="false" />
 
+        <ListPreference
+            android:key="android.theme.customization.accent_color"
+            android:title="@string/accent_prebuilt"
+            android:summary="@string/accent_prebuilt_summary" />
+
     <PreferenceCategory
         android:key="theme_customization_category"
         android:title="@string/themes_ui">

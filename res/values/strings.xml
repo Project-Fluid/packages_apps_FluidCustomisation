@@ -92,6 +92,8 @@
     <string name="clock_style_title">Lockscreen lock</string>
     <string name="clock_style_summary">Customize your lockscreen clock</string>
     <string name="rgb_accent">RGB color picker</string>
+    <string name="accent_prebuilt">Accent color - Prebuilt</string>
+    <string name="accent_prebuilt_summary">Pick your favorite accent color</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
