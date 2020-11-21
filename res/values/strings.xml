@@ -29,6 +29,7 @@
     <!-- Customization Categories/Fragment Titles -->
     <string name="clocksettings_title">Clock Settings</string>
     <string name="clocksettings_summary">Statusbar clock settings</string>
+    <string name="customisation_systemtheme">System Theme</string>
     
     <!-- Customization Titles -->
     <string name="status_bar_clock_date_title">Clock and Date</string>
@@ -87,6 +88,7 @@
 
     <!-- Theming -->
     <string name="themes_ui">UI</string>
+    <string name="theme_customization_sysui_icon_title">System Theme</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>

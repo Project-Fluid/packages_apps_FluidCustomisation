@@ -21,7 +21,7 @@
 
     <PreferenceCategory
         android:key="theme_customization_category"
-        android:title="@string/theme_ui">
+        android:title="@string/themes_ui">
 
         <ListPreference
             android:key="android.theme.customization.font"
@@ -30,6 +30,11 @@
         <ListPreference
             android:key="android.theme.customization.adaptive_icon_shape"
             android:title="@string/theme_customization_icon_shape_title"/>
+
+        <Preference
+	    android:key="system_icons"
+            android:title="@string/customisation_systemicons"
+            android:fragment="com.fluid.customisation.fragments.SystemTheme" />
 
     </PreferenceCategory>
 
