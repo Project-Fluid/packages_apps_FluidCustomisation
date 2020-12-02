@@ -1,31 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    Copyright (C) 2020 Fluid
-
+    Copyright (C) 2020 ProjectFluid
+    
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
+         http://www.apache.org/licenses/LICENSE-2.0
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- App name -->
-    <string name="customisation_settings_title">Fluid Customisation</string>
 
+<resources>
+    <!-- App name --> 
+    <string name="customisation_settings_title">Настройки Fluid\'a</string>
+    
     <!-- Customization Section Titles -->
-    <string name="customisation_themes">Themes</string>
-    <string name="customisation_statusbar">Status Bar</string>
-    <string name="customisation_qs">QS</string>
-    <string name="customisation_navigation">Navigation</string>
-    <string name="customisation_extras">Extras</string>
+    <string name="customisation_themes">Темы</string>
+    <string name="customisation_statusbar">Статус Бар</string>
+    <string name="customisation_qs">Быстрые настройки</string>
+    <string name="customisation_navigation">Навигация</string>
+    <string name="customisation_extras">Дополнительно</string>
 
+    <!-- Customization Categories/Fragment Titles -->
+    <string name="clocksettings_title">Настройки часов</string>
+    <string name="clocksettings_summary">Настройки часов в статус баре</string>
+    <string name="customisation_systemtheme">Системная тема</string>
+    
     <!-- Customization Titles -->
+    <string name="status_bar_clock_date_title">Дата и время</string>
+    <string name="status_bar_clock_date_summary">Настройки даты и времени в статус баре</string>
+    <string name="status_bar_clock_title">Настройки часов</string>
+    <string name="status_bar_clock_show">Показать часы и дату</string>
+    <string name="status_bar_clock_style_title">Расположение часов</string>
+    <string name="status_bar_clock_style_right">Справа</string>
+    <string name="status_bar_clock_style_center">В центре</string>
+    <string name="status_bar_clock_style_left">Слева</string>
+    <string name="status_bar_date_title">Настройки даты</string>
+    <string name="status_bar_am_pm_title">Стиль AM/PM</string>
+    <string name="status_bar_am_pm_info">24-часовой формат часов активирован</string>
+    <string name="status_bar_am_pm_normal">Нормальные</string>
+    <string name="status_bar_am_pm_small">Маленькие</string>
+    <string name="status_bar_am_pm_hidden">Скрыты (по умолчанию)</string>
+    <string name="clock_seconds_display">Показать секунды</string>
+    <string name="clock_date_display">Дата</string>
+    <string name="clock_date_display_summary">Отображение даты рядом со временем</string>
+    <string name="clock_date_display_none">Не показывать</string>
+    <string name="clock_date_display_small">Маленькая</string>
+    <string name="clock_date_display_normal">Нормальная</string>
+    <string name="clock_date_style">Стиль даты</string>
+    <string name="clock_date_style_normal">Нормальная</string>
+    <string name="clock_date_style_lowercase">Большая</string>
+    <string name="clock_date_style_uppercase">Маленькая</string>
+    <string name="clock_date_format_custom">Кастомный java формат</string>
+    <string name="clock_date_format">Формат даты</string>
+    <string name="clock_date_string_edittext_title">Должен быть в java DateFormat. Например: MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Введите сторку</string>
+    <string name="clock_date_right">Справа от часов</string>
+    <string name="clock_date_left">Слева от часов</string>
+    <string name="clock_date_position">Расположение даты</string>
     <string name="volume_rocker_music_controls_title">Управление плеером</string>
     <string name="volume_rocker_music_controls_summary">Переключать треки долгим нажатием кнопок громкости при выключенном экране</string>
     <string name="volume_rocker_wake_title">Пробуждение кнопками громкости</string>
@@ -40,4 +75,122 @@
     <string name="double_tap_sleep_gesture_summary">Дважды нажмите в любом месте на строке состояния, чтобы перевести устройство в спящий режим</string>
     <string name="double_tap_sleep_lockscreen_title">Двойное нажатие на экране блокировки для сна</string>
     <string name="double_tap_sleep_lockscreen_summary">Дважды нажмите в любом месте на экране блокировки, чтобы перевести устройство в спящий режим</string>
+    <string name="use_old_mobiletype_title">Использовать старый значок сотовой сети</string>
+    <string name="use_old_mobiletype_summary">Использовать pre-p значок для сигнала сотовой сети(Нужна перезагрузка)</string>
+    <string name="quick_settings_vibrate_title">Вибрация при касании</string>
+    <string name="quick_settings_vibrate_summary">Вибрировать при касании плитки быстрых настроек</string>
+
+    <!-- Theming -->
+    <string name="themes_ui">UI</string>
+    <string name="theme_customization_sysui_icon_title">Системная тема</string>
+    <string name="customisation_systemicons">Системная тема</string>
+    <string name="clock_style_title">Часы экрана блокировки</string>
+    <string name="clock_style_summary">Настройки часов экрана блокировки</string>
+    <string name="rgb_accent">RGB палитра</string>
+    <string name="accent_prebuilt">Цвет системы - По умолчанию</string>
+    <string name="accent_prebuilt_summary">Выбери любимый цвет для системы</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Палитра цветов</string>
+    <string name="press_color_to_apply">Нажмите на цвет, чтобы выбрать его</string>
+
+    <!-- Fingerprint location message - default -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Найдите датчик отпечатков пальцев на передней панели телефона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Найдите датчик отпечатков пальцев на левой стороне телефона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Найдите датчик отпечатков пальцев на правой стороне телефона.</string>
+
+    <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Найдите датчик отпечатков пальцев на передней панели устройства.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Найдите датчик отпечатков пальцев на левой стороне устройства.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Найдите датчик отпечатков пальцев на правой стороне устройства.</string>
+
+    <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Найдите датчик отпечатков пальцев на передней панели планшета.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Найдите датчик отпечатков пальцев на левой стороне планшета.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Найдите датчик отпечатков пальцев на правой стороне планшета.</string>
+
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Play Маркет</string>
+
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Адаптивное воспроизведение</string>
+    <string name="adaptive_playback_disabled_summary">Выключено</string>
+    <string name="adaptive_playback_timeout_title">Использовать перерыв на</string>
+    <string name="adaptive_playback_timeout_none">Без перерыва</string>
+    <string name="adaptive_playback_timeout_none_summary">Включено (Без перерыва)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 секунд</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Включено (30 секунд)</string>
+    <string name="adaptive_playback_timeout_1_min">1 минута</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Включено (1 минута)</string>
+    <string name="adaptive_playback_timeout_2_min">2 минуты</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Включено (2 минуты)</string>
+    <string name="adaptive_playback_timeout_5_min">5 минут</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Включено (5 минут)</string>
+    <string name="adaptive_playback_timeout_10_min">10 минут</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Включено (10 минут)</string>
+    <string name="adaptive_playback_explainer">Адаптивное воспроизведение автоматически приостанавливает воспроизведение мультимедиа при отключении звука и автоматически возобновляет воспроизведение при восстановлении громкости в течение установленного времени.</string>
+
+    <!-- Swipe up for face unlock -->
+    <string name="security_settings_face_require_swipe">Включить разблокировку по свайпу вверх</string>
+    <string name="security_settings_face_require_swipe_summary">Проведите вверх по экрану блокировки, чтобы использовать разблокировку лица</string>
+
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Сотовые данные</string>
+    <string name="data_usage_app_restrict_data_summary">Разрешить использование сотовых данных</string>
+    <string name="data_usage_app_restrict_vpn">VPN данные</string>
+    <string name="data_usage_app_restrict_vpn_summary">Включить использование данных VPN</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi данные</string>
+    <string name="data_usage_app_restrict_wifi_summary">Включить использование данных Wi\u2011Fi</string>
+
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Полноэкранные приложения</string>
+    <string name="display_cutout_force_fullscreen_summary">Заставить приложения игнорировать пространство выреза экрана</string>
+
+        <!-- SELinux Status -->
+    <string name="selinux_status">Статус SELinux\'a</string>
+    <string name="selinux_status_disabled">Выключен</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+
+    <!-- Fluid version -->
+    <string name="fluid_version">Версия FluidOS</string>
+
+    <!-- Fluid Settings -->
+    <string name="fluid_settings_title">Настройки Fluid\'a</string>
+    <string name="fluid_settings_summary">Плыви по течению!</string>
+
+    <!-- Specs -->
+    <string name="specs_title">Характеристики телефона</string>
+
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Свайп для скриншота</string>
+    <string name="three_finger_gesture_summary">Проведите тремя пальцами вниз по экрану чтобы сделать снимок экрана</string>
+
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Сохраненные наушники</string>
+
+    <string name="navbar_length">Длина панели жестов</string>
+    <string name="hidden_label">Спрятанная</string>
+    <string name="long_label">Длинная</string>
+
+    <!-- Hardware info -->
+    <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Платформа</string>
+    <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">Количество RAM</string>
+
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Связать громкость уведомлений и громкость звонка</string>
+
+    <!-- Backup Transport selection settings menu and activity title -->
+    <string name="backup_transport_setting_label">Сменить поставщика резервного копирования</string>
+    <string name="backup_transport_title">Выберите поставщика резервного копирования</string>
+
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">уведомления, журнал уведомлений</string>
+
+    <!-- Fluid Customisation -->
+    <string name="fluid_customisation_title">Настройки Fluid\'a</string>
+    <string name="fluid_customisation_summary">Плыви по течению!</string>
+
 </resources>
