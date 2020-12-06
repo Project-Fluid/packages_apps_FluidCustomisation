@@ -91,18 +91,7 @@
     <string name="theme_customization_sysui_icon_title">System Theme</string>
     <string name="clock_style_title">Lockscreen lock</string>
     <string name="clock_style_summary">Customize your lockscreen clock</string>
-    <string name="rgb_accent">RGB color picker</string>
     <string name="accent_prebuilt">Accent color - Prebuilt</string>
     <string name="accent_prebuilt_summary">Pick your favorite accent color</string>
 
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">Color Picker</string>
-    <string name="press_color_to_apply">Press on color below to apply</string>
-    <string name="arrow_right">→</string>
-    <string name="arrow_down">↓</string>
-    <string name="hex">Hex:</string>
-    <string name="hex_hint">#ff000000</string>
-    <string name="set">Set</string>
-    <string name="color_default">Default</string>
-    <string name="default_string">Default</string>
 </resources>

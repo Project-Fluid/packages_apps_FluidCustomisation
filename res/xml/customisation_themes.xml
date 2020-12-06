@@ -19,12 +19,6 @@
      xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
      android:title="@string/customisation_themes" >
 
-        <net.margaritov.preference.colorpicker.ColorPickerPreference
-            android:key="accent_color"
-            android:title="@string/rgb_accent"
-            settings:defaultColorValue="0x72BBFF"
-            android:persistent="false" />
-
         <ListPreference
             android:key="android.theme.customization.accent_color"
             android:title="@string/accent_prebuilt"
