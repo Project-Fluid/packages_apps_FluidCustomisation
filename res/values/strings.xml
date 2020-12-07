@@ -89,9 +89,9 @@
     <!-- Theming -->
     <string name="themes_ui">UI</string>
     <string name="theme_customization_sysui_icon_title">System Theme</string>
-    <string name="clock_style_title">Lockscreen lock</string>
+    <string name="clock_style_title">Lockscreen clock</string>
     <string name="clock_style_summary">Customize your lockscreen clock</string>
     <string name="accent_prebuilt">Accent color - Prebuilt</string>
-    <string name="accent_prebuilt_summary">Pick your favorite accent color</string>
+    <string name="accent_prebuilt_summary">Pick an accent color from our predone selections!</string>
 
 </resources>

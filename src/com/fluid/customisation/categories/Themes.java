@@ -17,47 +17,48 @@
 
 package com.fluid.customisation.categories;
 
-import android.content.Context;
 import android.content.ContentResolver;
-import android.content.res.Resources;
-import android.os.Bundle;
-import android.os.UserHandle;
-import android.preference.ListPreference;
-import android.preference.SwitchPreference;
-import android.preference.Preference;
-import android.preference.PreferenceCategory;
-import android.preference.PreferenceScreen;
-import android.preference.Preference.OnPreferenceChangeListener;
-import android.provider.Settings;
+import android.content.Context;
+import android.os.SystemProperties;
+import androidx.preference.*;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+
+import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.display.OverlayCategoryPreferenceController;
 import com.android.settingslib.core.AbstractPreferenceController;
-import com.android.settingslib.core.lifecycle.Lifecycle
+import com.android.settingslib.core.lifecycle.Lifecycle;
 
 import com.android.settings.R;
-import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.settings.Utils;
 
-public class Themes extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Themes extends DashboardFragment {
 
     public static final String TAG = "Themes";
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        addPreferencesFromResource(R.xml.customisation_themes);
-        setRetainInstance(true);
-
-        ContentResolver resolver = getActivity().getContentResolver();
-    }
+    private ContentResolver mResolver;
 
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.FLUID;
+    }
+
+    @Override
+    protected String getLogTag() {
+        return TAG;
+    }
+
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        return false;
+    }
+
+    @Override
+    protected int getPreferenceScreenResId() {
+        return R.xml.customisation_themes;
     }
 
     @Override
@@ -76,19 +77,5 @@ public class Themes extends SettingsPreferenceFragment implements Preference.OnP
                 "android.theme.customization.adaptive_icon_shape"));
         return controllers;
     }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-    }
-
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-        final String key = preference.getKey();
-        return true;
-    }
 }
+

@@ -24,10 +24,6 @@
             android:title="@string/accent_prebuilt"
             android:summary="@string/accent_prebuilt_summary" />
 
-    <PreferenceCategory
-        android:key="theme_customization_category"
-        android:title="@string/themes_ui">
-
         <ListPreference
             android:key="android.theme.customization.font"
             android:title="@string/theme_customization_font_title"/>
@@ -38,9 +34,6 @@
 
         <Preference
 	    android:key="system_icons"
-            android:title="@string/customisation_systemicons"
+            android:title="@string/customisation_systemtheme"
             android:fragment="com.fluid.customisation.fragments.SystemTheme" />
-
-    </PreferenceCategory>
-
 </PreferenceScreen>
