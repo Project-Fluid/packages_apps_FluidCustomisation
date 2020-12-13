@@ -19,19 +19,11 @@
      xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
      android:title="@string/customisation_systemtheme" >
 
-        <ListPreference
-            android:key="android.theme.customization.icon_pack"
-            android:title="@string/theme_customization_sysui_icon_title"/>
+     <ListPreference
+          android:layout="@layout/themes_system_preview"
+          android:selectable="false" />
 
-       <Preference
-        android:key="clock_style"
-        android:title="@string/clock_style_title"
-        android:summary="@string/clock_style_summary"
-        android:icon="@drawable/ic_settings_clockstyle">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:targetPackage="com.android.wallpaper"
-            android:targetClass="com.android.customization.picker.LockClockPickerActivity" />
-    </Preference>
+     <ListPreference
+          android:key="android.theme.customization.icon_pack"
+          android:title="@string/theme_customization_sysui_icon_title"/>
 </PreferenceScreen>
-

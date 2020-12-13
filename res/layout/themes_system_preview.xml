@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2020-2021 ProjectFluid
+    
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/themes_preview_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginBottom="32dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_marginVertical="48dp">
+
+        <LinearLayout
+            android:id="@+id/status_icons_preview"
+            android:layout_width="104dp"
+            android:layout_height="56dp"
+            android:background="@drawable/fluid_preview_card"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@*android:drawable/ic_wifi_signal_3"
+                android:tint="@color/fluid_preview_icon_color" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@*android:drawable/ic_signal_cellular_3_4_bar"
+                android:tint="@color/fluid_preview_icon_color" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@*android:drawable/ic_battery_80_24dp"
+                android:tint="@color/fluid_preview_icon_color" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/settings_header_preview"
+            android:layout_below="@id/status_icons_preview"
+            android:layout_width="272dp"
+            android:layout_height="176dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:background="@drawable/fluid_preview_card">
+
+            <View
+                android:id="@+id/header_text"
+                android:layout_width="88dp"
+                android:layout_height="24dp"
+                android:background="@drawable/fluid_preview_card"
+                android:backgroundTint="?android:attr/colorAccent"
+                android:alpha="0.2"/>
+
+            <View
+                android:id="@+id/header_image"
+                android:layout_toEndOf="@id/header_text"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="128dp"
+                android:background="@drawable/fluid_preview_card"
+                android:backgroundTint="?android:attr/colorAccent"
+                android:alpha="0.2"/>
+
+            <View
+                android:id="@+id/contextual_area"
+                android:layout_below="@id/header_text"
+                android:layout_width="240dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/fluid_preview_card"
+                android:backgroundTint="@color/themes_preview_holder"/>
+
+            <View
+                android:id="@+id/search_area"
+                android:layout_below="@id/contextual_area"
+                android:layout_width="240dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/fluid_preview_card"
+                android:backgroundTint="@color/themes_preview_holder"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/volume_preview"
+            android:layout_toEndOf="@id/settings_header_preview"
+            android:layout_below="@id/status_icons_preview"
+            android:layout_width="48dp"
+            android:layout_height="176dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/fluid_preview_card"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:layout_width="144dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:progress="69"
+                android:rotation="270"
+                android:layout_marginTop="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_fluid_music_tint"
+                android:layout_marginVertical="12dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/settings_wireless_tile_preview"
+            android:layout_below="@id/settings_header_preview"
+            android:layout_width="336dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:background="@drawable/fluid_preview_card">
+
+            <View
+                android:id="@+id/dashboard_wireless_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/ic_settings_wireless_dashboard_icon"/>
+
+            <View
+                android:id="@+id/wireless_textline1"
+                android:layout_toEndOf="@id/dashboard_wireless_icon"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="240dp"
+                android:layout_height="12dp"
+                android:background="@color/themes_preview_holder"/>
+
+            <View
+                android:id="@+id/wireless_textline2"
+                android:layout_toEndOf="@id/dashboard_wireless_icon"
+                android:layout_below="@id/wireless_textline1"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="136dp"
+                android:layout_height="12dp"
+                android:background="@color/themes_preview_holder"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settings_devices_tile_preview"
+            android:layout_below="@id/settings_wireless_tile_preview"
+            android:layout_width="336dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:background="@drawable/fluid_preview_card">
+
+            <View
+                android:id="@+id/dashboard_devices_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/ic_settings_devices_dashboard_icon"/>
+
+            <View
+                android:id="@+id/devices_textline1"
+                android:layout_toEndOf="@id/dashboard_devices_icon"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="240dp"
+                android:layout_height="12dp"
+                android:background="@color/themes_preview_holder"/>
+
+            <View
+                android:id="@+id/devices_textline2"
+                android:layout_toEndOf="@id/dashboard_devices_icon"
+                android:layout_below="@id/devices_textline1"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="136dp"
+                android:layout_height="12dp"
+                android:background="@color/themes_preview_holder"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

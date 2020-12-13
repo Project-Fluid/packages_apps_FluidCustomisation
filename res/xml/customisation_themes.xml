@@ -15,25 +15,53 @@
      limitations under the License.
 -->
 <PreferenceScreen
-     xmlns:android="http://schemas.android.com/apk/res/android"
-     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-     android:title="@string/customisation_themes" >
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/customisation_themes" >
 
-        <ListPreference
-            android:key="android.theme.customization.accent_color"
-            android:title="@string/accent_prebuilt"
-            android:summary="@string/accent_prebuilt_summary" />
+    <ListPreference
+        android:layout="@layout/themes_accent_preview"
+        android:selectable="false" />
 
-        <ListPreference
-            android:key="android.theme.customization.font"
-            android:title="@string/theme_customization_font_title"/>
+    <ListPreference
+        android:key="android.theme.customization.accent_color"
+        android:title="@string/accent_prebuilt"
+        android:summary="@string/accent_prebuilt_summary"
+        android:icon="@drawable/ic_fluid_accent" />
 
-        <ListPreference
-            android:key="android.theme.customization.adaptive_icon_shape"
-            android:title="@string/theme_customization_icon_shape_title"/>
+    <ListPreference
+        android:key="android.theme.customization.adaptive_icon_shape"
+        android:title="@string/theme_customization_icon_shape_title"
+        android:icon="@drawable/ic_fluid_adaptive_icon" />
 
-        <Preference
-	    android:key="system_icons"
-            android:title="@string/customisation_systemtheme"
-            android:fragment="com.fluid.customisation.fragments.SystemTheme" />
+    <Preference
+        android:key="system_icons"
+        android:title="@string/customisation_systemtheme"
+        android:fragment="com.fluid.customisation.fragments.SystemTheme"
+        android:icon="@drawable/ic_fluid_system_theme" />
+
+    <ListPreference
+        android:layout="@layout/themes_font_preview"
+        android:selectable="false" />
+
+    <ListPreference
+        android:key="android.theme.customization.font"
+        android:title="@string/theme_customization_font_title"
+        android:icon="@drawable/ic_fluid_font" />
+
+    <ListPreference
+        android:layout="@layout/themes_lock_clock_preview"
+        android:selectable="false" />
+
+    <Preference
+        android:key="clock_style"
+        android:title="@string/clock_style_title"
+        android:summary="@string/clock_style_summary"
+        android:icon="@drawable/ic_settings_clockstyle">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.android.wallpaper"
+            android:targetClass="com.android.customization.picker.LockClockPickerActivity" />
+    </Preference>
 </PreferenceScreen>

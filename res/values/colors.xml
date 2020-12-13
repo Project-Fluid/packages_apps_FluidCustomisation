@@ -20,5 +20,13 @@
     <color name="bottom_navigation_color">#FFFFFF</color>
     <color name="bottom_navigation_ripple">#1f000000</color>
 
+    <color name="themes_preview_background">#F5F5F5</color>
+    <color name="themes_preview_card">#FFFFFF</color>
+    <color name="preview_text">#000000</color>
+    <color name="themes_preview_holder">#F3F3F3</color>
+    <color name="preview_accent">?android:attr/colorAccent</color>
+
+    <color name="fluid_preview_icon_color">#000000</color>
+
     <color name="iconcol">#121212</color>
 </resources>

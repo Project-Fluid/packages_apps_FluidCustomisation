@@ -20,5 +20,12 @@
     <color name="bottom_navigation_color">@*android:color/secondary_device_default_settings</color>
     <color name="bottom_navigation_ripple">#13FFFFFF</color>
 
+    <color name="themes_preview_background">#202020</color>
+    <color name="themes_preview_card">#121212</color>
+    <color name="preview_text">#FFFFFF</color>
+    <color name="themes_preview_holder">#202020</color>
+
+    <color name="fluid_preview_icon_color">#FFFFFF</color>
+
     <color name="iconcol">#FFFFFF</color>
 </resources>
