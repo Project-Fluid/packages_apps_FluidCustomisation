@@ -98,4 +98,13 @@
     <string name="fod_recog_animation">FOD recognizing animation</string>
     <string name="fod_recog_animation_summary">Shows animation while reading your finger</string>
 
+    <!-- Theme Selector -->
+    <string name="theme_default_title">Default</string>
+    <string name="theme_filled_title">Filled</string>
+    <string name="theme_circular_title">Circular</string>
+    <string name="theme_rounded_title">Rounded</string>
+    <string name="theme_sam_title">Sam</string>
+    <string name="theme_victor_title">Victor</string>
+    <string name="theme_kai_title">Kai</string>
+
 </resources>

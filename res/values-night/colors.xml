@@ -28,4 +28,8 @@
     <color name="fluid_preview_icon_color">#FFFFFF</color>
 
     <color name="iconcol">#FFFFFF</color>
+
+    <color name="theme_selector_unselected">#17FFFFFF</color>
+    <color name="theme_selector_icon">#FFFFFF</color>
+    
 </resources>

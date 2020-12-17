@@ -27,6 +27,7 @@ import android.view.Surface;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.view.LayoutInflater;
 import android.preference.Preference;
 import androidx.core.content.ContextCompat;
@@ -53,9 +54,11 @@ public class FluidCustomisation extends SettingsPreferenceFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
+        getActivity().getWindow().setNavigationBarColor(getResources().getColor(R.color.bottom_navigation_color));
+
         View view = inflater.inflate(R.layout.layout_fluid_customisation, container, false);
         final BottomNavigationView bottomNavigation = (BottomNavigationView) view.findViewById(R.id.bottom_navigation);
-
+        
         bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {

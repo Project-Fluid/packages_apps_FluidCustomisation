@@ -23,7 +23,8 @@
           android:layout="@layout/themes_system_preview"
           android:selectable="false" />
 
-     <ListPreference
-          android:key="android.theme.customization.icon_pack"
-          android:title="@string/theme_customization_sysui_icon_title"/>
+     <com.android.settingslib.widget.LayoutPreference
+          android:key="system_theme_selector"
+          android:layout="@layout/system_theme_selector" />
+
 </PreferenceScreen>
