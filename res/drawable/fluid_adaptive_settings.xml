@@ -20,7 +20,7 @@
         <com.android.settingslib.widget.AdaptiveIconShapeDrawable
             android:width="48dp"
             android:height="48dp"
-            android:color="#7286FF" />
+            android:color="#337286FF" />
     </item>
     <item
         android:drawable="@drawable/ic_fluid_themes_settings"
