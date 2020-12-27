@@ -33,9 +33,9 @@
         android:title="@string/customisation_qs" />
 
     <item
-        android:id="@+id/navigation_navigation"
-        android:icon="@drawable/ic_fluid_navigation"
-        android:title="@string/customisation_navigation" />
+        android:id="@+id/navigation_lockscreen"
+        android:icon="@drawable/ic_fluid_lockscreen"
+        android:title="@string/customisation_lockscreen" />
  
     <item
         android:id="@+id/navigation_extras"

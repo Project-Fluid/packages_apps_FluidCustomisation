@@ -22,8 +22,8 @@
     <!-- Customization Section Titles -->
     <string name="customisation_themes">Теми</string>
     <string name="customisation_statusbar">Статус Бар</string>
-    <string name="customisation_qs">QS</string>
-    <string name="customisation_navigation">Навигация</string>
+    <string name="customisation_qs">Бързи Настройки</string>
+    <string name="customisation_lockscreen">Заключен екран</string>
     <string name="customisation_extras">Екстри</string>
 
     <!-- Customization Titles -->

@@ -45,7 +45,7 @@ import com.android.settings.R;
 import com.fluid.customisation.categories.Themes;
 import com.fluid.customisation.categories.StatusBar;
 import com.fluid.customisation.categories.QS;
-import com.fluid.customisation.categories.Navigation;
+import com.fluid.customisation.categories.Lockscreen;
 import com.fluid.customisation.categories.Extras;
 
 public class FluidCustomisation extends SettingsPreferenceFragment {
@@ -71,8 +71,8 @@ public class FluidCustomisation extends SettingsPreferenceFragment {
                     } else if (item.getItemId() == R.id.navigation_qs) {
                         switchFragment(new QS());
 
-                    } else if (item.getItemId() == R.id.navigation_navigation) {
-                        switchFragment(new Navigation());
+                    } else if (item.getItemId() == R.id.navigation_lockscreen) {
+                        switchFragment(new Lockscreen());
 
                     } else if (item.getItemId() == R.id.navigation_extras) {
                         switchFragment(new Extras());

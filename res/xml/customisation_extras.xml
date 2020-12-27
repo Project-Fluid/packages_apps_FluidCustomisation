@@ -26,24 +26,6 @@
             android:defaultValue="false" />
 
     <com.fluid.customisation.preference.SystemSettingSwitchPreference
-            android:key="volume_rocker_wake"
-            android:summary="@string/volume_rocker_wake_summary"
-            android:title="@string/volume_rocker_wake_title"
-            android:defaultValue="false" />
-
-    <com.fluid.customisation.preference.SystemSettingSwitchPreference
-        android:key="lockscreen_battery_info"
-        android:title="@string/lockscreen_battery_info_title"
-        android:summary="@string/lockscreen_battery_info_summary"
-        android:defaultValue="true" />
-
-    <com.fluid.customisation.preference.SystemSettingSwitchPreference
-        android:key="double_tap_sleep_lockscreen"
-        android:title="@string/double_tap_sleep_lockscreen_title"
-        android:summary="@string/double_tap_sleep_lockscreen_summary"
-        android:defaultValue="false" />
-
-    <com.fluid.customisation.preference.SystemSettingSwitchPreference
         android:key="fod_recognizing_animation"
         android:title="@string/fod_recog_animation"
         android:summary="@string/fod_recog_animation_summary"
