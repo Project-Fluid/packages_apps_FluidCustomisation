@@ -6,7 +6,7 @@
         </shape>
     </item>
     <item
-        android:drawable="@drawable/wifi_icon_sam"
+        android:drawable="@drawable/wifi_icon_kai"
         android:width="32dp"
         android:height="32dp"
         android:gravity="center"/>
