@@ -25,10 +25,4 @@
             android:title="@string/volume_rocker_music_controls_title"
             android:defaultValue="false" />
 
-    <com.fluid.customisation.preference.SystemSettingSwitchPreference
-        android:key="fod_recognizing_animation"
-        android:title="@string/fod_recog_animation"
-        android:summary="@string/fod_recog_animation_summary"
-        android:defaultValue="false" />
-
 </PreferenceScreen>

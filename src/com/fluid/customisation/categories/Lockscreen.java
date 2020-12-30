@@ -22,12 +22,8 @@ import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.preference.ListPreference;
-import android.preference.SwitchPreference;
-import android.preference.Preference;
-import android.preference.PreferenceCategory;
-import android.preference.PreferenceScreen;
-import android.preference.Preference.OnPreferenceChangeListener;
+import androidx.preference.*;
+import com.android.internal.util.custom.FodUtils;
 import android.provider.Settings;
 
 import com.android.settings.R;
@@ -38,6 +34,10 @@ import com.android.settings.Utils;
 public class Lockscreen extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
     public static final String TAG = "Lockscreen";
+    private static final String KEY_FOD_RECOGNIZING_ANIM = "fod_recognizing_animation";
+
+    private boolean mHasFod;
+    private Context mContext;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -47,6 +47,13 @@ public class Lockscreen extends SettingsPreferenceFragment implements Preference
         setRetainInstance(true);
 
         ContentResolver resolver = getActivity().getContentResolver();
+        PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mContext = getContext();
+        mHasFod = FodUtils.hasFodSupport(mContext);
+        if (!mHasFod) {
+            prefScreen.removePreference(findPreference(KEY_FOD_RECOGNIZING_ANIM));
+        }
     }
 
     @Override
