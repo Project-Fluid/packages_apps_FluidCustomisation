@@ -85,6 +85,8 @@
     <string name="use_old_mobiletype_summary">Use pre-p mobiletype icons for signal (Reboot required)</string>
     <string name="quick_settings_vibrate_title">Vibrate on touch</string>
     <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
+    <string name="tuner_title">Statusbar Icon Tuner</string>
+    <string name="tuner_summary">Control visibility of status bar icons</string>
 
     <!-- Theming -->
     <string name="themes_ui">UI</string>
