@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2020 ProjectFluid
+    
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<resources>
+    <!-- App name --> 
+    <string name="customisation_settings_title">Fluid Özelleştirmeleri</string>
+ 
+    <!-- Customization Section Titles -->
+    <string name="customisation_themes">Temalar</string>
+    <string name="customisation_statusbar">Durum Çubuğu</string>
+    <string name="customisation_qs">QS</string>
+    <string name="customisation_lockscreen">Kilit Ekranı</string>
+    <string name="customisation_extras">Ekstralar</string>
+
+    <!-- Customization Categories/Fragment Titles -->
+    <string name="clocksettings_title">Saat ayarları</string>
+    <string name="clocksettings_summary">Durum çubuğu saat ayarı</string>
+    <string name="customisation_systemtheme">Sistem teması</string>
+    
+    <!-- Customization Titles -->
+    <string name="status_bar_clock_date_title">Saat ve Tarih</string>
+    <string name="status_bar_clock_date_summary">Durum çubuğu saatinizi ve tarihinizi özelleştirin</string>
+    <string name="status_bar_clock_title">Saat ayarları</string>
+    <string name="status_bar_clock_show">Saat ve tarihi göster</string>
+    <string name="status_bar_clock_style_title">Saat stili</string>
+    <string name="status_bar_clock_style_right">Sağ</string>
+    <string name="status_bar_clock_style_center">Merkez</string>
+    <string name="status_bar_clock_style_left">Sol</string>
+    <string name="status_bar_date_title">Tarih ayarları</string>
+    <string name="status_bar_am_pm_title">AM/PM stili</string>
+    <string name="status_bar_am_pm_info">24 saatlik zaman etkinleştirildi</string>
+    <string name="status_bar_am_pm_normal">Normal</string>
+    <string name="status_bar_am_pm_small">Küçük</string>
+    <string name="status_bar_am_pm_hidden">Gizli (varsayılan)</string>
+    <string name="clock_seconds_display">Saniyeyi göster</string>
+    <string name="clock_date_display">Tarih</string>
+    <string name="clock_date_display_summary">Display custom date before the clock</string>
+    <string name="clock_date_display_none">Gösterme</string>
+    <string name="clock_date_display_small">Küçük yazı tipi boyutu</string>
+    <string name="clock_date_display_normal">Normal yazı tipi boyutu</string>
+    <string name="clock_date_style">Tarih stili</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Küçük harf</string>
+    <string name="clock_date_style_uppercase">Büyük harf</string>
+    <string name="clock_date_format_custom">Özel java biçimi</string>
+    <string name="clock_date_format">Tarih formatı</string>
+    <string name="clock_date_string_edittext_title">Ay/Gün/Yıl tarih formatında olmalı</string>
+    <string name="clock_date_string_edittext_summary">Dize girin</string>
+    <string name="clock_date_right">Saatin sağında</string>
+    <string name="clock_date_left">Saatin solunda</string>
+    <string name="clock_date_position">Tarih konumu</string>
+    <string name="volume_rocker_music_controls_title">Oynatma kontrolü</string>
+    <string name="volume_rocker_music_controls_summary">Ekran kapalıyken, ses seviyesi tuşlarına uzun basıldığında müzik değiştirilir</string>
+    <string name="volume_rocker_wake_title">Volume rocker wake</string>
+    <string name="volume_rocker_wake_summary">Ses seviyesi tuşlarına basmak cihazınızı uyandırır</string>
+    <string name="show_fourg_title">LTE yerine 4G göster</string>
+    <string name="show_fourg_summary">LTE durum çubuğu göstergelerini 4G ile değiştirir</string>
+    <string name="volte_switch_title">VoLTE simgesi</string>
+    <string name="volte_switch_summary">Display VoLTE icon</string>
+    <string name="data_disabled_icon_title">Veri devre dışı simgesi</string>
+    <string name="data_disabled_icon_summary">Veriler devre dışı bırakıldığında sinyal çubuğunun yanında bir çarpı işareti görüntüleyin</string>
+    <string name="roaming_indicator_icon_title">Dolaşım göstergesi</string>
+    <string name="roaming_indicator_icon_summary">Dolaşım modundayken, dolaşım göstergesini sinyal simgesinde görüntüleyin</string>
+    <string name="lockscreen_battery_info_title">Kilit ekranı şarj bilgisi</string>
+    <string name="lockscreen_battery_info_summary">Şarj sırasında anlaşmalı şarj cihazının maksimum akımını, voltajını ve pil sıcaklığını kilit ekranında görüntüleyin</string>
+    <string name="double_tap_sleep_gesture_title">Çift tıkla uyku</string>
+    <string name="double_tap_sleep_gesture_summary">Cihazı uyku moduna geçirmek için durum çubuğuna iki kez dokunun</string>
+    <string name="double_tap_sleep_lockscreen_title">Çift tıkla uyku</string>
+    <string name="double_tap_sleep_lockscreen_summary">Telefonu uyku moduna geçirmek için kilit ekranında herhangi bir yere iki kez dokunun</string>
+    <string name="use_old_mobiletype_title">Eski stil mobil veri simgelerini kullanın</string>
+    <string name="use_old_mobiletype_summary">Sinyal için önceden hazırlanmış mobil tip simgeleri kullanın (Yeniden başlatma gerekir)</string>
+    <string name="quick_settings_vibrate_title">Dokunulduğunda titreştir</string>
+    <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
+    <string name="tuner_title">Durum Çubuğu Simgesi Ayarlayıcı</string>
+    <string name="tuner_summary">Durum çubuğu simgelerinin görünürlüğünü kontrol edin</string>
+
+    <!-- Theming -->
+    <string name="themes_ui">UI</string>
+    <string name="theme_customization_sysui_icon_title">Sistem Teması</string>
+    <string name="clock_style_title">Kilit ekranı saati</string>
+    <string name="clock_style_summary">Kilit ekranı saatinizi özelleştirin</string>
+    <string name="accent_prebuilt">Vurgu rengi - Önceden oluşturulmuş</string>
+    <string name="accent_prebuilt_summary">Önceden oluşturulmuş bir vurgu rengi seçin!</string>
+
+    <!-- FOD animations -->
+    <string name="fod_recog_animation">FOD tanıma animasyonu</string>
+    <string name="fod_recog_animation_summary">Parmağınızı okurken animasyon gösterir</string>
+
+    <!-- Theme Selector -->
+    <string name="theme_default_title">Varsayılan</string>
+    <string name="theme_filled_title">Doldurulmuş</string>
+    <string name="theme_circular_title">Sirküler</string>
+    <string name="theme_rounded_title">Yuvarlak</string>
+    <string name="theme_sam_title">Sam</string>
+    <string name="theme_victor_title">Victor</string>
+    <string name="theme_kai_title">Kai</string>
+    
+    <!-- Lockscreen Clocks -->
+    <string name="lock_screen_custom_clock_face_category">Kilit Ekranı Saati</string>
+    <string name="lock_screen_custom_clock_face_title">Kilit ekranı saat stili</string>
+    <string name="lock_screen_custom_clock_face_default">Varsayılan</string>
+    <string name="lock_screen_custom_clock_face_default_bold">Varsayılan (kalın)</string>
+    <string name="lock_screen_custom_clock_face_analog">Analog</string>
+    <string name="lock_screen_custom_clock_face_bubble">Bubble</string>
+    <string name="lock_screen_custom_clock_face_samsung">Samsung</string>
+    <string name="lock_screen_custom_clock_face_samsung_bold">Samsung (kalın)</string>
+    <string name="lock_screen_custom_clock_face_samsung_highlight">Samsung (colored)</string>
+    <string name="lock_screen_custom_clock_face_typographic">Typographic</string>
+
+</resources>
