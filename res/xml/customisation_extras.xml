@@ -25,4 +25,10 @@
             android:title="@string/volume_rocker_music_controls_title"
             android:defaultValue="false" />
 
+        <com.fluid.customisation.preference.GlobalSettingSwitchPreference
+            android:key="allow_signature_fake"
+            android:title="@string/allow_signature_fake"
+            android:summary="@string/allow_signature_fake_summary"
+            android:defaultValue="false" />
+
 </PreferenceScreen>
