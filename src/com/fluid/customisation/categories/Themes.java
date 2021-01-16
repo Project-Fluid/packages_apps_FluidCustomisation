@@ -44,6 +44,8 @@ import java.util.List;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.fluid.customisation.etc.CustomOverlayPreferenceController;
+
 public class Themes extends DashboardFragment implements OnPreferenceChangeListener{
 
     public static final String TAG = "Themes";
@@ -102,6 +104,8 @@ public class Themes extends DashboardFragment implements OnPreferenceChangeListe
     private static List<AbstractPreferenceController> buildPreferenceControllers(
             Context context, Lifecycle lifecycle, Fragment fragment) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
+        controllers.add(new CustomOverlayPreferenceController(context,
+                "android.theme.customization.custom_overlays"));
         controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.accent_color"));
         controllers.add(new OverlayCategoryPreferenceController(context,

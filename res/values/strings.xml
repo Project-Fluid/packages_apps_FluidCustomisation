@@ -102,6 +102,7 @@
     <string name="clock_style_summary">Customize your lockscreen clock</string>
     <string name="accent_prebuilt">Accent color - Prebuilt</string>
     <string name="accent_prebuilt_summary">Pick an accent color from our predone selections!</string>
+    <string name="theme_customization_systemui_title">Primary Theme</string>
 
     <!-- FOD animations -->
     <string name="fod_recog_animation">FOD recognizing animation</string>
