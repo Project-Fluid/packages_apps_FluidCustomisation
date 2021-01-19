@@ -34,9 +34,12 @@ import com.android.settings.Utils;
 public class Lockscreen extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
     public static final String TAG = "Lockscreen";
+    private static final String POCKET_JUDGE = "pocket_judge";
     private static final String KEY_FOD_RECOGNIZING_ANIM = "fod_recognizing_animation";
 
+
     private boolean mHasFod;
+    private Preference mPocketJudge;
     private Context mContext;
 
     @Override
@@ -47,6 +50,7 @@ public class Lockscreen extends SettingsPreferenceFragment implements Preference
         setRetainInstance(true);
 
         ContentResolver resolver = getActivity().getContentResolver();
+        final Resources res = getResources();
         PreferenceScreen prefScreen = getPreferenceScreen();
 
         mContext = getContext();
@@ -54,6 +58,11 @@ public class Lockscreen extends SettingsPreferenceFragment implements Preference
         if (!mHasFod) {
             prefScreen.removePreference(findPreference(KEY_FOD_RECOGNIZING_ANIM));
         }
+        mPocketJudge = (Preference) prefScreen.findPreference(POCKET_JUDGE);
+        boolean mPocketJudgeSupported = res.getBoolean(
+                com.android.internal.R.bool.config_pocketModeSupported);
+        if (!mPocketJudgeSupported)
+            prefScreen.removePreference(mPocketJudge);
     }
 
     @Override
