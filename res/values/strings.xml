@@ -87,11 +87,6 @@
     <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
     <string name="tuner_title">Statusbar Icon Tuner</string>
     <string name="tuner_summary">Control visibility of status bar icons</string>
-    <string name="qs_rows_columns_title">QS rows and columns</string>
-    <string name="qs_rows_portrait_title">Rows (Portrait)</string>
-    <string name="qs_rows_landscape_title">Rows (Landscape)</string>
-    <string name="qs_columns_portrait_title">Columns (Portrait)</string>
-    <string name="qs_columns_landscape_title">Columns (Landscape)</string>
     <string name="allow_signature_fake">Allow signature spoofing</string>
     <string name="allow_signature_fake_summary">Allow apps to bypass security systems by pretending to be a different app. Mainly used for MicroG.</string>
 
