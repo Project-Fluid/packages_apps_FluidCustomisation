@@ -49,9 +49,10 @@ import java.util.List;
 public class SystemTheme extends DashboardFragment {
 
     public static final String TAG = "SystemTheme";
+    
+    public static final String SETTINGS_ACTIVE_OVERLAY_KEY = "active_overlay_key";
 
     private static final String KEY_SELECTOR_PREFERENCE = "system_theme_selector";
-    private static final String SETTINGS_ACTIVE_OVERLAY_KEY = "active_overlay_key";
 
     private ContentResolver mResolver;
     private IOverlayManager mOverlayService;

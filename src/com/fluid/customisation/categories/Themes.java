@@ -18,6 +18,7 @@
 package com.fluid.customisation.categories;
 
 import static android.os.UserHandle.USER_CURRENT;
+import static com.fluid.customisation.fragments.SystemTheme.SETTINGS_ACTIVE_OVERLAY_KEY;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -53,9 +54,12 @@ public class Themes extends DashboardFragment implements OnPreferenceChangeListe
     private static final String CUSTOM_CLOCK_FACE = Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK_FACE;
     private static final String DEFAULT_CLOCK = "com.android.keyguard.clock.DefaultClockController";
 
+    private static final String KEY_SYSTEM_THEME = "system_icons";
+
     private ContentResolver mResolver;
 
     private ListPreference mLockClockStyles;
+    private Preference mSystemTheme;
     private Context mContext;
 
     @Override
@@ -67,6 +71,13 @@ public class Themes extends DashboardFragment implements OnPreferenceChangeListe
         super.onCreate(savedInstanceState);
 
         mContext = getActivity();
+
+        mSystemTheme = (Preference) findPreference(KEY_SYSTEM_THEME);
+        if (Settings.Secure.getString(getContext().getContentResolver(), SETTINGS_ACTIVE_OVERLAY_KEY) != null) {
+            String inputString = Settings.Secure.getString(getContext().getContentResolver(), SETTINGS_ACTIVE_OVERLAY_KEY);
+            String capitalizedString = inputString.substring(0, 1).toUpperCase() + inputString.substring(1);
+            mSystemTheme.setSummary(capitalizedString);
+        }
 
         mLockClockStyles = (ListPreference) findPreference(CUSTOM_CLOCK_FACE);
         String mLockClockStylesValue = getLockScreenCustomClockFace();
