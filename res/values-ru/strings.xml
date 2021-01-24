@@ -21,7 +21,7 @@
     <string name="customisation_statusbar">Статус Бар</string>
     <string name="customisation_qs">Быстрые настройки</string>
     <string name="customisation_navigation">Навигация</string>
-    <string name="customisation_extras">Дополнительно</string>
+    <string name="customisation_extras">Остальное</string>
 
     <!-- Customization Categories/Fragment Titles -->
     <string name="clocksettings_title">Настройки часов</string>
