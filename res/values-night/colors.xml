@@ -23,7 +23,7 @@
     <color name="themes_preview_background">#14FFFFFF</color>
     <color name="themes_preview_card">@*android:color/primary_device_default_settings</color>
     <color name="preview_text">#FFFFFF</color>
-    <color name="themes_preview_holder">@*android:color/primary_device_default_settings</color>
+    <color name="themes_preview_holder">#14FFFFFF</color>
 
     <color name="fluid_preview_icon_color">#FFFFFF</color>
 
