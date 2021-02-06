@@ -121,8 +121,8 @@
     <string name="network_traffic_refresh_interval_summary">Duration after which speed is remeasured</string>
     <string name="unit_seconds">seconds</string>
     <string name="qs_media_player_title">QS Media player</string>
-    <string name="qs_media_player_summary_on">Show media player in QS.\nRequires a SystemUI restart</string>
-    <string name="qs_media_player_summary_off">Show media player as a notification.\nRequires a SystemUI restart</string>
+    <string name="qs_media_player_summary_on">Showing media player in QS.\nRequires a SystemUI restart</string>
+    <string name="qs_media_player_summary_off">Showing media player as a notification.\nRequires a SystemUI restart</string>
 
     <!-- Theming -->
     <string name="themes_ui">UI</string>
