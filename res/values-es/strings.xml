@@ -1,0 +1,123 @@
+<!--
+    Copyright (C) 2020 ProjectFluid
+    
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<resources>
+    <!-- App name --> 
+    <string name="customisation_settings_title">Personalización Fluid</string>
+ 
+    <!-- Customization Section Titles -->
+    <string name="customisation_themes">Temas</string>
+    <string name="customisation_statusbar">Barra de estado</string>
+    <string name="customisation_qs">Ajustes rápidos</string>
+    <string name="customisation_lockscreen">Pantalla de bloqueo</string>
+    <string name="customisation_extras">Extras</string>
+
+    <!-- Customization Categories/Fragment Titles -->
+    <string name="clocksettings_title">Ajustes del reloj</string>
+    <string name="clocksettings_summary">Ajustes del reloj de la barra de estado</string>
+    <string name="customisation_systemtheme">Tema del sistema</string>
+    
+    <!-- Customization Titles -->
+    <string name="status_bar_clock_date_title">Fecha y hora</string>
+    <string name="status_bar_clock_date_summary">Personaliza la fecha y la hora en la barra de estado</string>
+    <string name="status_bar_clock_title">Ajustes del reloj</string>
+    <string name="status_bar_clock_show">Muestra la fecha y la hora</string>
+    <string name="status_bar_clock_style_title">Estilo del reloj</string>
+    <string name="status_bar_clock_style_right">Derecha</string>
+    <string name="status_bar_clock_style_center">Centrado</string>
+    <string name="status_bar_clock_style_left">Izquierda</string>
+    <string name="status_bar_date_title">Ajustes de fecha</string>
+    <string name="status_bar_am_pm_title">Estilo AM/PM</string>
+    <string name="status_bar_am_pm_info">El reloj de 24h está activado</string>
+    <string name="status_bar_am_pm_normal">Normal</string>
+    <string name="status_bar_am_pm_small">Pequeño</string>
+    <string name="status_bar_am_pm_hidden">Oculto (por defecto)</string>
+    <string name="clock_seconds_display">Mostrar segundos</string>
+    <string name="clock_date_display">Fecha</string>
+    <string name="clock_date_display_summary">Mostrar la fecha personalizada antes del reloj</string>
+    <string name="clock_date_display_none">No mostrar</string>
+    <string name="clock_date_display_small">Tamaño de fuente pequeño</string>
+    <string name="clock_date_display_normal">Tamaño de fuente normal</string>
+    <string name="clock_date_style">Estilo de fecha</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Minúsculas</string>
+    <string name="clock_date_style_uppercase">Mayúsculas</string>
+    <string name="clock_date_format_custom">Formato Java personalizado</string>
+    <string name="clock_date_format">Formato de fecha</string>
+    <string name="clock_date_string_edittext_title">Debe expresarse en DateFormat ej. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Introducir cadena</string>
+    <string name="clock_date_right">Derecha de la hora</string>
+    <string name="clock_date_left">Izquierda de la hora</string>
+    <string name="clock_date_position">Posición de la fecha</string>
+    <string name="volume_rocker_music_controls_title">Control de reproducción</string>
+    <string name="volume_rocker_music_controls_summary">Cuando la pantalla está apagada, al presionar prolongadamente las teclas de volumen se buscarán pistas de música</string>
+    <string name="volume_rocker_wake_title">Despertar con teclas de volumen</string>
+    <string name="volume_rocker_wake_summary">Presionar las teclas de volumen despertará el dispositivo</string>
+    <string name="show_fourg_title">Mostrar 4G en lugar de LTE</string>
+    <string name="show_fourg_summary">Reemplaza el indicador LTE de la barra de estado con 4G</string>
+    <string name="volte_switch_title">Icono VoLTE</string>
+    <string name="volte_switch_summary">Mostrar el icono VoLTE</string>
+    <string name="data_disabled_icon_title">Icono de datos desactivados</string>
+    <string name="data_disabled_icon_summary">Muestra una cruz cerca de las barras de señal cuando los datos móviles están desactivados</string>
+    <string name="roaming_indicator_icon_title">Indicador Roaming</string>
+    <string name="roaming_indicator_icon_summary">Muestra el indicador de Roaming en las barras de señal al entrar en el modo roaming</string>
+    <string name="lockscreen_battery_info_title">Información de carga en la pantalla de bloqueo</string>
+    <string name="lockscreen_battery_info_summary">Muestra la corriente y el voltaje máximos del cargador y la temperatura de la batería en la pantalla de bloqueo mientras carga</string>
+    <string name="double_tap_sleep_gesture_title">Doble toque para apagar en la barra de estado</string>
+    <string name="double_tap_sleep_gesture_summary">Doble toque en la barra de estado para apagar la pantalla</string>
+    <string name="double_tap_sleep_lockscreen_title">Doble toque para apagar en la pantalla de bloqueo</string>
+    <string name="double_tap_sleep_lockscreen_summary">Doble toque en cualquier zona de la pantalla de bloqueo para apagar la pantalla</string>
+    <string name="use_old_mobiletype_title">Utilizar el antigüo diseño de iconos de datos móviles</string>
+    <string name="use_old_mobiletype_summary">Utliza iconos clasicos para la señal (Reinicio requerido)</string>
+    <string name="quick_settings_vibrate_title">Vibrar al tocar</string>
+    <string name="quick_settings_vibrate_summary">Vibra al tocar los paneles de ajustes rápidos</string>
+    <string name="tuner_title">Modificador de iconos de la barra de estado</string>
+    <string name="tuner_summary">Controla la visibilidad de los iconos de la barra de estado</string>
+
+    <!-- Theming -->
+    <string name="themes_ui">UI</string>
+    <string name="theme_customization_sysui_icon_title">Tema del sistema</string>
+    <string name="clock_style_title">Reloj de pantalla de bloqueo</string>
+    <string name="clock_style_summary">Personaliza tu pantalla de bloqueo</string>
+    <string name="accent_prebuilt">Color del acento - Prediseñado</string>
+    <string name="accent_prebuilt_summary">¡Elige un color de acento de nuestra selección!</string>
+
+    <!-- FOD animations -->
+    <string name="fod_recog_animation">Animación de reconocimiento del FOD</string>
+    <string name="fod_recog_animation_summary">Muestra una animación al escanear el dedo</string>
+
+    <!-- Theme Selector -->
+    <string name="theme_default_title">Por defecto</string>
+    <string name="theme_filled_title">Relleno</string>
+    <string name="theme_circular_title">Circular</string>
+    <string name="theme_rounded_title">Redondeado</string>
+    <string name="theme_sam_title">Sam</string>
+    <string name="theme_victor_title">Victor</string>
+    <string name="theme_kai_title">Kai</string>
+    
+    <!-- Lockscreen Clocks -->
+    <string name="lock_screen_custom_clock_face_category">Reloj de la pantalla de bloqueo</string>
+    <string name="lock_screen_custom_clock_face_title">Estilo del reloj de la pantalla de bloqueo</string>
+    <string name="lock_screen_custom_clock_face_default">Por defecto</string>
+    <string name="lock_screen_custom_clock_face_default_bold">Por defecto (negrita)</string>
+    <string name="lock_screen_custom_clock_face_analog">Análogo</string>
+    <string name="lock_screen_custom_clock_face_bubble">Burbuja</string>
+    <string name="lock_screen_custom_clock_face_samsung">Samsung</string>
+    <string name="lock_screen_custom_clock_face_samsung_bold">Samsung (negrita)</string>
+    <string name="lock_screen_custom_clock_face_samsung_highlight">Samsung (coloreado)</string>
+    <string name="lock_screen_custom_clock_face_typographic">Tipográfico</string>
+
+</resources>
