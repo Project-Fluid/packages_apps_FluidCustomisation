@@ -125,6 +125,7 @@
     <string name="qs_media_player_summary_off">Showing media player as a notification.\nRequires a SystemUI restart</string>
     <string name="navigation_bar_arrow_keys_title">IME arrows</string>
     <string name="navigation_bar_arrow_keys_summary">Show arrow keys on navbar while typing</string>
+    <string name="navigation_bar_inverse_title">Inverse layout</string>
 
     <!-- Theming -->
     <string name="themes_ui">UI</string>
