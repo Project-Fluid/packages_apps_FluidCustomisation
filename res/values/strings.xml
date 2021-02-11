@@ -131,6 +131,10 @@
     <string name="navbar_layout_compact">Compact</string>
     <string name="navbar_layout_leftleaning">Left-leaning</string>
     <string name="navbar_layout_rightleaning">Right-leaning</string>
+    <string name="pocket_judge_title">Pocket detection</string>
+    <string name="pocket_judge_summary">Block screen inputs when device is in pocket</string>
+    <string name="fod_recog_animation">FOD recognizing animation</string>
+    <string name="fod_recog_animation_summary">Shows animation while reading your finger</string>
 
     <!-- Theming -->
     <string name="themes_ui">UI</string>
@@ -140,10 +144,6 @@
     <string name="accent_prebuilt">Accent color - Prebuilt</string>
     <string name="accent_prebuilt_summary">Pick an accent color from our predone selections!</string>
     <string name="theme_customization_systemui_title">Primary Theme</string>
-
-    <!-- FOD animations -->
-    <string name="fod_recog_animation">FOD recognizing animation</string>
-    <string name="fod_recog_animation_summary">Shows animation while reading your finger</string>
 
     <!-- Theme Selector -->
     <string name="theme_default_title">Default</string>
@@ -166,8 +166,4 @@
     <string name="lock_screen_custom_clock_face_samsung_highlight">Samsung (colored)</string>
     <string name="lock_screen_custom_clock_face_typographic">Typographic</string>
     <string name="lock_screen_custom_clock_face_fluid">Fluid</string>
-
-    <!-- Pocket judge -->
-    <string name="pocket_judge_title">Pocket detection</string>
-    <string name="pocket_judge_summary">Block screen inputs when device is in pocket</string>
 </resources>
