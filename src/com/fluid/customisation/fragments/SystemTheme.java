@@ -29,7 +29,12 @@ import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.provider.Settings;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
 import android.view.View;
+import android.view.LayoutInflater;
 
 import androidx.preference.*;
 import androidx.fragment.app.Fragment;
@@ -49,221 +54,96 @@ import java.util.List;
 public class SystemTheme extends DashboardFragment {
 
     public static final String TAG = "SystemTheme";
-    
     public static final String SETTINGS_ACTIVE_OVERLAY_KEY = "active_overlay_key";
 
     private static final String KEY_SELECTOR_PREFERENCE = "system_theme_selector";
+    private String currentActiveOverlay;
 
     private ContentResolver mResolver;
     private IOverlayManager mOverlayService;
 
     private LayoutPreference mSelectorPreference;
-
-    private ImageButton mSelectorImageButton1;
-    private ImageButton mSelectorImageButton2;
-    private ImageButton mSelectorImageButton3;
-    private ImageButton mSelectorImageButton4;
-    private ImageButton mSelectorImageButton5;
-    private ImageButton mSelectorImageButton6;
-    private ImageButton mSelectorImageButton7;
-
-    private String currentActiveOverlay;
+    private LinearLayout mParentLayout;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mSelectorPreference = findPreference(KEY_SELECTOR_PREFERENCE);
 
-        mOverlayService = IOverlayManager.Stub
-            .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
-        
+        mSelectorPreference = findPreference(KEY_SELECTOR_PREFERENCE);
+        mParentLayout = (LinearLayout) mSelectorPreference.findViewById(R.id.selector_button_frame);
+
+        mOverlayService = IOverlayManager.Stub.asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
+
         initViews();
     }
+
     public void initViews() {
-        mSelectorImageButton1 = mSelectorPreference.findViewById(R.id.selectorImageButton1);
-        mSelectorImageButton2 = mSelectorPreference.findViewById(R.id.selectorImageButton2);
-        mSelectorImageButton3 = mSelectorPreference.findViewById(R.id.selectorImageButton3);
-        mSelectorImageButton4 = mSelectorPreference.findViewById(R.id.selectorImageButton4);
-        mSelectorImageButton5 = mSelectorPreference.findViewById(R.id.selectorImageButton5);
-        mSelectorImageButton6 = mSelectorPreference.findViewById(R.id.selectorImageButton6);
-        mSelectorImageButton7 = mSelectorPreference.findViewById(R.id.selectorImageButton7);
-
-        mSelectorImageButton1.setOnClickListener(onSelectorImageButton1ClickListener);
-        mSelectorImageButton2.setOnClickListener(onSelectorImageButton2ClickListener);
-        mSelectorImageButton3.setOnClickListener(onSelectorImageButton3ClickListener);
-        mSelectorImageButton4.setOnClickListener(onSelectorImageButton4ClickListener);
-        mSelectorImageButton5.setOnClickListener(onSelectorImageButton5ClickListener);
-        mSelectorImageButton6.setOnClickListener(onSelectorImageButton6ClickListener);
-        mSelectorImageButton7.setOnClickListener(onSelectorImageButton7ClickListener);
-
-        initActive();
-    }
-
-    public void initActive() {
+        mParentLayout.removeAllViews();
+        LayoutInflater inflater = LayoutInflater.from(getContext());
 
         if (Settings.Secure.getString(getContext().getContentResolver(), SETTINGS_ACTIVE_OVERLAY_KEY) != null) {
             currentActiveOverlay = Settings.Secure.getString(getContext().getContentResolver(), SETTINGS_ACTIVE_OVERLAY_KEY);
-
             } else { 
             currentActiveOverlay = "undefined";
         }
+        
+        for(int i = 0; i< ThemeUtil.SYSTEM_THEMES.length; i++){
+            String theme = ThemeUtil.SYSTEM_THEMES[i];
+            View view = inflater.inflate(R.layout.system_theme_selector_button_singleton, null);
+            TextView label = view.findViewById(R.id.btn_label);
+            ImageButton imageButton = view.findViewById(R.id.btn_imagebutton);
+            String nameStringCapitalized = theme.substring(0, 1).toUpperCase() + theme.substring(1);
 
-        switch (currentActiveOverlay) {
-            case "default":
-                mSelectorImageButton1.setBackgroundResource(R.drawable.imagebutton_bg_active);
-                break;
-            case "filled":
-                mSelectorImageButton2.setBackgroundResource(R.drawable.imagebutton_bg_active);
-                break;
-            case "circular":
-                mSelectorImageButton3.setBackgroundResource(R.drawable.imagebutton_bg_active);
-                break;
-            case "rounded":
-                mSelectorImageButton4.setBackgroundResource(R.drawable.imagebutton_bg_active);
-                break;
-            case "sam":
-                mSelectorImageButton5.setBackgroundResource(R.drawable.imagebutton_bg_active);
-                break;
-            case "victor":
-                mSelectorImageButton6.setBackgroundResource(R.drawable.imagebutton_bg_active);
-                break;
-            case "kai":
-                mSelectorImageButton7.setBackgroundResource(R.drawable.imagebutton_bg_active);
-                break;
-            case "undefined":
-                break;
+            label.setText(nameStringCapitalized);
 
-        }
+            if (theme.equalsIgnoreCase(currentActiveOverlay)) {
+                imageButton.setBackgroundResource(R.drawable.imagebutton_bg_active);
+            }
+
+            imageButton.setImageResource(getContext().getResources().getIdentifier("ic_systemicons_" + theme, "drawable", getContext().getPackageName()));
+            imageButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    setActive(theme);
+                }
+            });
+            mParentLayout.addView(view);
+        };
     }
 
     public void setActive(String buttonClicked) {
-
         reset();
-        switch (buttonClicked) {
-            case "default":
-                mSelectorImageButton1.setBackgroundResource(R.drawable.imagebutton_bg_active);
-                Settings.Secure.putString(getContext().getContentResolver(), SETTINGS_ACTIVE_OVERLAY_KEY,  buttonClicked);
-                break;
-            case "filled":
-                mSelectorImageButton2.setBackgroundResource(R.drawable.imagebutton_bg_active);
-                Settings.Secure.putString(getContext().getContentResolver(), SETTINGS_ACTIVE_OVERLAY_KEY,  buttonClicked);
-                for(int i = 0; i< ThemeUtil.FILLED_THEME_PACKAGES.length; i++){
-                    try {
-                        mOverlayService.setEnabled(ThemeUtil.FILLED_THEME_PACKAGES[i], true, USER_CURRENT);
-                    } catch (RemoteException re) {
-                        throw re.rethrowFromSystemServer();
-                    }
-                }
-                break;
-            case "circular":
-                mSelectorImageButton3.setBackgroundResource(R.drawable.imagebutton_bg_active);
-                Settings.Secure.putString(getContext().getContentResolver(), SETTINGS_ACTIVE_OVERLAY_KEY,  buttonClicked);
-                for(int i = 0; i< ThemeUtil.CIRCULAR_THEME_PACKAGES.length; i++){
-                    try {
-                        mOverlayService.setEnabled(ThemeUtil.CIRCULAR_THEME_PACKAGES[i], true, USER_CURRENT);
-                    } catch (RemoteException re) {
-                        throw re.rethrowFromSystemServer();
-                    }
-                }
-                break;
-            case "rounded":
-                mSelectorImageButton4.setBackgroundResource(R.drawable.imagebutton_bg_active);
-                Settings.Secure.putString(getContext().getContentResolver(), SETTINGS_ACTIVE_OVERLAY_KEY,  buttonClicked);
-                for(int i = 0; i< ThemeUtil.ROUNDED_THEME_PACKAGES.length; i++) {
-                    try {
-                        mOverlayService.setEnabled(ThemeUtil.ROUNDED_THEME_PACKAGES[i], true, USER_CURRENT);
-                    } catch (RemoteException re) {
-                        throw re.rethrowFromSystemServer();
-                    }
-                }
-                break;
-            case "sam":
-                mSelectorImageButton5.setBackgroundResource(R.drawable.imagebutton_bg_active);
-                Settings.Secure.putString(getContext().getContentResolver(), SETTINGS_ACTIVE_OVERLAY_KEY,  buttonClicked);
-                for(int i = 0; i< ThemeUtil.SAM_THEME_PACKAGES.length; i++){
-                    try {
-                        mOverlayService.setEnabled(ThemeUtil.SAM_THEME_PACKAGES[i], true, USER_CURRENT);
-                    } catch (RemoteException re) {
-                        throw re.rethrowFromSystemServer();
-                    }
-                }
-                break;
-            case "victor":
-                mSelectorImageButton6.setBackgroundResource(R.drawable.imagebutton_bg_active);
-                Settings.Secure.putString(getContext().getContentResolver(), SETTINGS_ACTIVE_OVERLAY_KEY,  buttonClicked);
-                for(int i = 0; i< ThemeUtil.VICTOR_THEME_PACKAGES.length; i++){
-                    try {
-                        mOverlayService.setEnabled(ThemeUtil.VICTOR_THEME_PACKAGES[i], true, USER_CURRENT);
-                    } catch (RemoteException re) {
-                        throw re.rethrowFromSystemServer();
-                    }
-                }
-                break;
-            case "kai":
-                mSelectorImageButton7.setBackgroundResource(R.drawable.imagebutton_bg_active);
-                Settings.Secure.putString(getContext().getContentResolver(), SETTINGS_ACTIVE_OVERLAY_KEY,  buttonClicked);
-                for(int i = 0; i< ThemeUtil.KAI_THEME_PACKAGES.length; i++){
-                    try {
-                        mOverlayService.setEnabled(ThemeUtil.KAI_THEME_PACKAGES[i], true, USER_CURRENT);
-                    } catch (RemoteException re) {
-                        throw re.rethrowFromSystemServer();
-                    }
-                }
-                break;
+
+        if (buttonClicked == "default") {
+            Settings.Secure.putString(getContext().getContentResolver(), SETTINGS_ACTIVE_OVERLAY_KEY, buttonClicked);
+            return;
+        }
+
+        Settings.Secure.putString(getContext().getContentResolver(), SETTINGS_ACTIVE_OVERLAY_KEY, buttonClicked);
+        for(int i = 0; i< ThemeUtil.getArrayOfTheme(buttonClicked).length; i++){
+            try {
+                mOverlayService.setEnabled(ThemeUtil.getArrayOfTheme(buttonClicked)[i], true, USER_CURRENT);
+            } catch (RemoteException re) {
+                throw re.rethrowFromSystemServer();
+            }
         }
     }
-    
-    public void reset() {
-        mSelectorImageButton1.setBackgroundResource(R.drawable.imagebutton_bg_normal);
-        mSelectorImageButton2.setBackgroundResource(R.drawable.imagebutton_bg_normal);
-        mSelectorImageButton3.setBackgroundResource(R.drawable.imagebutton_bg_normal);
-        mSelectorImageButton4.setBackgroundResource(R.drawable.imagebutton_bg_normal);
-        mSelectorImageButton5.setBackgroundResource(R.drawable.imagebutton_bg_normal);
-        mSelectorImageButton6.setBackgroundResource(R.drawable.imagebutton_bg_normal);
-        mSelectorImageButton7.setBackgroundResource(R.drawable.imagebutton_bg_normal);
 
-        for(int i = 0; i< ThemeUtil.FILLED_THEME_PACKAGES.length; i++){
-            try {
-                mOverlayService.setEnabled(ThemeUtil.FILLED_THEME_PACKAGES[i], false, USER_CURRENT);
-            } catch (RemoteException re) {
-                throw re.rethrowFromSystemServer();
+    public void reset() {
+        for (int i = 0; i< ThemeUtil.SYSTEM_THEMES.length; i++) {
+            String theme = ThemeUtil.SYSTEM_THEMES[i];
+
+            if (theme != "default") {
+                for (int packageCount = 0; packageCount< ThemeUtil.getArrayOfTheme(theme).length; packageCount++) {
+                    try {
+                        mOverlayService.setEnabled(ThemeUtil.getArrayOfTheme(theme)[packageCount], false, USER_CURRENT);
+                    } catch (RemoteException re) {
+                        throw re.rethrowFromSystemServer();
+                    }
+                }
             }
         }
-        for(int i = 0; i< ThemeUtil.CIRCULAR_THEME_PACKAGES.length; i++){
-            try {
-                mOverlayService.setEnabled(ThemeUtil.CIRCULAR_THEME_PACKAGES[i], false, USER_CURRENT);
-            } catch (RemoteException re) {
-                throw re.rethrowFromSystemServer();
-            }
-        }
-        for(int i = 0; i< ThemeUtil.ROUNDED_THEME_PACKAGES.length; i++){
-            try {
-                mOverlayService.setEnabled(ThemeUtil.ROUNDED_THEME_PACKAGES[i], false, USER_CURRENT);
-            } catch (RemoteException re) {
-                throw re.rethrowFromSystemServer();
-            }
-        }
-        for(int i = 0; i< ThemeUtil.SAM_THEME_PACKAGES.length; i++){
-            try {
-                mOverlayService.setEnabled(ThemeUtil.SAM_THEME_PACKAGES[i], false, USER_CURRENT);
-            } catch (RemoteException re) {
-                throw re.rethrowFromSystemServer();
-            }
-        }
-        for(int i = 0; i< ThemeUtil.VICTOR_THEME_PACKAGES.length; i++){
-            try {
-                mOverlayService.setEnabled(ThemeUtil.VICTOR_THEME_PACKAGES[i], false, USER_CURRENT);
-            } catch (RemoteException re) {
-                throw re.rethrowFromSystemServer();
-            }
-        }
-        for(int i = 0; i< ThemeUtil.KAI_THEME_PACKAGES.length; i++){
-            try {
-                mOverlayService.setEnabled(ThemeUtil.KAI_THEME_PACKAGES[i], false, USER_CURRENT);
-            } catch (RemoteException re) {
-                throw re.rethrowFromSystemServer();
-            }
-        }
+        initViews();
     }
 
     @Override
@@ -284,48 +164,4 @@ public class SystemTheme extends DashboardFragment {
     protected int getPreferenceScreenResId() {
         return R.xml.customisation_systemtheme;
     }
-
-    private View.OnClickListener onSelectorImageButton1ClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            setActive("default");
-        }
-    };
-    private View.OnClickListener onSelectorImageButton2ClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            setActive("filled");
-        }
-    };
-    private View.OnClickListener onSelectorImageButton3ClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            setActive("circular");
-        }
-    };
-    private View.OnClickListener onSelectorImageButton4ClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            setActive("rounded");
-        }
-    };
-    private View.OnClickListener onSelectorImageButton5ClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            setActive("sam");
-        }
-    };
-    private View.OnClickListener onSelectorImageButton6ClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            setActive("victor");
-        }
-    };
-    private View.OnClickListener onSelectorImageButton7ClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            setActive("kai");
-        }
-    };
-
 }

@@ -85,7 +85,7 @@ public class Themes extends DashboardFragment implements OnPreferenceChangeListe
         mLockClockStyles.setSummary(mLockClockStyles.getEntry());
         mLockClockStyles.setOnPreferenceChangeListener(this);
     }
-    
+
     @Override
     protected String getLogTag() {
         return TAG;

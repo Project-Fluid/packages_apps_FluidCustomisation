@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout 
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,98 +7,14 @@
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:overScrollMode="never"
             android:scrollbars="none">
             <LinearLayout
+                android:id="@+id/selector_button_frame"
                 android:layout_width="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:orientation="horizontal"
                 android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    
-                    <ImageButton
-                        style="@style/SystemThemeSelectorStyle"
-                        android:id="@+id/selectorImageButton1"
-                        android:src="@drawable/ic_systemicons_default" />
-                    <TextView
-                        style="@style/SystemThemeTitleStyle"
-                        android:text="@string/theme_default_title" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <ImageButton
-                        style="@style/SystemThemeSelectorStyle"
-                        android:id="@+id/selectorImageButton2"
-                        android:src="@drawable/ic_systemicons_filled" />
-                    <TextView
-                        style="@style/SystemThemeTitleStyle"
-                        android:text="@string/theme_filled_title" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <ImageButton
-                        style="@style/SystemThemeSelectorStyle"
-                        android:id="@+id/selectorImageButton3"
-                        android:src="@drawable/ic_systemicons_circular" />
-                    <TextView
-                        style="@style/SystemThemeTitleStyle"
-                        android:text="@string/theme_circular_title" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <ImageButton
-                        style="@style/SystemThemeSelectorStyle"
-                        android:id="@+id/selectorImageButton4"
-                        android:src="@drawable/ic_systemicons_rounded" />
-                    <TextView
-                        style="@style/SystemThemeTitleStyle"
-                        android:text="@string/theme_rounded_title" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <ImageButton
-                        style="@style/SystemThemeSelectorStyle"
-                        android:id="@+id/selectorImageButton5"
-                        android:src="@drawable/ic_systemicons_sam" />
-                    <TextView
-                        style="@style/SystemThemeTitleStyle"
-                        android:text="@string/theme_sam_title" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <ImageButton
-                        style="@style/SystemThemeSelectorStyle"
-                        android:id="@+id/selectorImageButton6"
-                        android:src="@drawable/ic_systemicons_victor" />
-                    <TextView
-                        style="@style/SystemThemeTitleStyle"
-                        android:text="@string/theme_victor_title" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <ImageButton
-                        style="@style/SystemThemeSelectorStyle"
-                        android:id="@+id/selectorImageButton7"
-                        android:src="@drawable/ic_systemicons_kai" />
-                    <TextView
-                        style="@style/SystemThemeTitleStyle"
-                        android:text="@string/theme_kai_title" />                
-                </LinearLayout>
             </LinearLayout>
         </HorizontalScrollView>
 </RelativeLayout>

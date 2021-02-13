@@ -19,7 +19,39 @@ package com.fluid.customisation.util;
 public class ThemeUtil {
 
     // SYSTEM THEMES
+    public static final String[] SYSTEM_THEMES = {
+            "default",
+            "filled",
+            "circular",
+            "rounded",
+            "sam",
+            "victor",
+            "kai"
+    };
 
+    public static String[] getArrayOfTheme(String themename) {
+        switch (themename) {
+                case "circular": {
+                        return CIRCULAR_THEME_PACKAGES;
+                }
+                case "filled": {
+                        return FILLED_THEME_PACKAGES;
+                }
+                case "rounded": {
+                        return ROUNDED_THEME_PACKAGES;
+                }
+                case "sam": {
+                        return SAM_THEME_PACKAGES;
+                }
+                case "victor": {
+                        return VICTOR_THEME_PACKAGES;
+                }
+                case "kai": {
+                        return KAI_THEME_PACKAGES;
+                }
+        }
+        return null;
+    }
     public static final String[] FILLED_THEME_PACKAGES = {
             "com.android.theme.icon_pack.filled.android",
             "com.android.theme.icon_pack.filled.systemui",
