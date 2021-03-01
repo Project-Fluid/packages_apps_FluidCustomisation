@@ -66,8 +66,6 @@
     <string name="volume_rocker_wake_summary">Вывести устройство из спящего режима нажатием кнопок громкости</string>
     <string name="show_fourg_title">Отображать 4G вместо LTE</string>
     <string name="show_fourg_summary">Заменить LTE индикатор в статусбаре на 4G</string>
-    <string name="volte_switch_title">Иконка VoLTE</string>
-    <string name="volte_switch_summary">Отображать иконку VoLTE в статусбаре</string>
     <string name="double_tap_sleep_gesture_title">Двойное нажатие на строке состояния для сна</string>
     <string name="double_tap_sleep_gesture_summary">Дважды нажмите в любом месте на строке состояния, чтобы перевести устройство в спящий режим</string>
     <string name="double_tap_sleep_lockscreen_title">Двойное нажатие на экране блокировки для сна</string>

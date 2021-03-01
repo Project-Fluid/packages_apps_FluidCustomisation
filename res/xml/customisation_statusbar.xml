@@ -66,12 +66,6 @@
         android:defaultValue="false" />
 
     <com.fluid.customisation.preference.SystemSettingSwitchPreference
-        android:key="volte_icon"
-        android:title="@string/volte_switch_title"
-        android:summary="@string/volte_switch_summary"
-        android:defaultValue="true" />
-
-    <com.fluid.customisation.preference.SystemSettingSwitchPreference
         android:key="data_disabled_icon"
         android:title="@string/data_disabled_icon_title"
         android:summary="@string/data_disabled_icon_summary"

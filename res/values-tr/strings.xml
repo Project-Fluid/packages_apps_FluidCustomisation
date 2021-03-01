@@ -69,8 +69,6 @@
     <string name="volume_rocker_wake_summary">Ses seviyesi tuşlarına basmak cihazınızı uyandırır</string>
     <string name="show_fourg_title">LTE yerine 4G göster</string>
     <string name="show_fourg_summary">LTE durum çubuğu göstergelerini 4G ile değiştirir</string>
-    <string name="volte_switch_title">VoLTE simgesi</string>
-    <string name="volte_switch_summary">Display VoLTE icon</string>
     <string name="data_disabled_icon_title">Veri devre dışı simgesi</string>
     <string name="data_disabled_icon_summary">Veriler devre dışı bırakıldığında sinyal çubuğunun yanında bir çarpı işareti görüntüleyin</string>
     <string name="roaming_indicator_icon_title">Dolaşım göstergesi</string>

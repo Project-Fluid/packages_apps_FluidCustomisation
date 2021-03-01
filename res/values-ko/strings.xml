@@ -69,8 +69,6 @@
     <string name="volume_rocker_wake_summary">볼륨 키를 눌러 기기 대기 모드 해제</string>
     <string name="show_fourg_title">LTE 대신 4G 표시</string>
     <string name="show_fourg_summary">LTE 상태 표시줄 아이콘을 4G로 대체</string>
-    <string name="volte_switch_title">VoLTE 상태 표시</string>
-    <string name="volte_switch_summary">상태 표시줄에 VoLTE 아이콘 표시</string>
     <string name="data_disabled_icon_title">모바일 네트워크 비활성화 상태 표시</string>
     <string name="data_disabled_icon_summary">모바일 네트워크가 비활성화되면 신호 상태 아이콘에 표시</string>
     <string name="roaming_indicator_icon_title">로밍 상태 표시</string>

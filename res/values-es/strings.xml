@@ -68,8 +68,6 @@
     <string name="volume_rocker_wake_summary">Presionar las teclas de volumen despertará el dispositivo</string>
     <string name="show_fourg_title">Mostrar 4G en lugar de LTE</string>
     <string name="show_fourg_summary">Reemplaza el indicador LTE de la barra de estado con 4G</string>
-    <string name="volte_switch_title">Icono VoLTE</string>
-    <string name="volte_switch_summary">Mostrar el icono VoLTE</string>
     <string name="data_disabled_icon_title">Icono de datos desactivados</string>
     <string name="data_disabled_icon_summary">Muestra una cruz cerca de las barras de señal cuando los datos móviles están desactivados</string>
     <string name="roaming_indicator_icon_title">Indicador Roaming</string>
