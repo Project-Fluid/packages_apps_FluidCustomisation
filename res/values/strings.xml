@@ -141,6 +141,13 @@
     <string name="battery_percent_summary">Always show the battery percent with the icon</string>
     <string name="battery_percent_inside_title">Show percent inside</string>
     <string name="battery_percent_inside_summary">Show percent inside the icon</string>
+    <string name="incall_vibration_category">In-call vibration</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_connect_summary">Enable to vibrate after call connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_call_wait_summary">Enable to vibrate while call is on waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+    <string name="incall_vibrate_disconnect_summary">Enable to vibrate after call disconnect</string>
 
     <!-- Theming -->
     <string name="themes_ui">UI</string>
