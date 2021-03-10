@@ -20,14 +20,14 @@
     <!-- Customization Section Titles -->
     <string name="customisation_themes">Temalar</string>
     <string name="customisation_statusbar">Durum Çubuğu</string>
-    <string name="customisation_qs">QS</string>
+    <string name="customisation_qs">HA</string>
     <string name="customisation_lockscreen">Kilit Ekranı</string>
     <string name="customisation_extras">Ekstralar</string>
     <!-- Customization Categories/Fragment Titles -->
     <string name="clocksettings_title">Saat ayarları</string>
     <string name="clocksettings_summary">Durum çubuğu saat ayarı</string>
-    <string name="trafficsettings_title">Traffic Indicator</string>
-    <string name="trafficsettings_summary">Statusbar/Header traffic indicator settings</string>
+    <string name="trafficsettings_title">Trafik Göstergesi</string>
+    <string name="trafficsettings_summary">Durum Çubuğu/Üst trafik göstergesi ayarları</string>
     <string name="customisation_systemtheme">Sistem teması</string>
     <!-- Customization Titles -->
     <string name="status_bar_clock_date_title">Saat ve Tarih</string>
@@ -39,14 +39,14 @@
     <string name="status_bar_clock_style_center">Merkez</string>
     <string name="status_bar_clock_style_left">Sol</string>
     <string name="status_bar_date_title">Tarih ayarları</string>
-    <string name="status_bar_am_pm_title">AM/PM stili</string>
-    <string name="status_bar_am_pm_info">24 saatlik zaman etkinleştirildi</string>
+    <string name="status_bar_am_pm_title">ÖÖ/ÖS stili</string>
+    <string name="status_bar_am_pm_info">24 saatlik zaman stili etkinleştirildi</string>
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">Küçük</string>
     <string name="status_bar_am_pm_hidden">Gizli (varsayılan)</string>
     <string name="clock_seconds_display">Saniyeyi göster</string>
     <string name="clock_date_display">Tarih</string>
-    <string name="clock_date_display_summary">Display custom date before the clock</string>
+    <string name="clock_date_display_summary">Saatten önce özel tarihi göster</string>
     <string name="clock_date_display_none">Gösterme</string>
     <string name="clock_date_display_small">Küçük yazı tipi boyutu</string>
     <string name="clock_date_display_normal">Normal yazı tipi boyutu</string>
@@ -57,13 +57,13 @@
     <string name="clock_date_format_custom">Özel java biçimi</string>
     <string name="clock_date_format">Tarih formatı</string>
     <string name="clock_date_string_edittext_title">Ay/Gün/Yıl tarih formatında olmalı</string>
-    <string name="clock_date_string_edittext_summary">Dize girin</string>
+    <string name="clock_date_string_edittext_summary">Metin girin</string>
     <string name="clock_date_right">Saatin sağında</string>
     <string name="clock_date_left">Saatin solunda</string>
     <string name="clock_date_position">Tarih konumu</string>
     <string name="volume_rocker_music_controls_title">Oynatma kontrolü</string>
     <string name="volume_rocker_music_controls_summary">Ekran kapalıyken, ses seviyesi tuşlarına uzun basıldığında müzik değiştirilir</string>
-    <string name="volume_rocker_wake_title">Volume rocker wake</string>
+    <string name="volume_rocker_wake_title">Ses butonları ile uyandırma</string>
     <string name="volume_rocker_wake_summary">Ses seviyesi tuşlarına basmak cihazınızı uyandırır</string>
     <string name="show_fourg_title">LTE yerine 4G göster</string>
     <string name="show_fourg_summary">LTE durum çubuğu göstergelerini 4G ile değiştirir</string>
@@ -80,7 +80,7 @@
     <string name="use_old_mobiletype_title">Eski stil mobil veri simgelerini kullanın</string>
     <string name="use_old_mobiletype_summary">Sinyal için önceden hazırlanmış mobil tip simgeleri kullanın (Yeniden başlatma gerekir)</string>
     <string name="quick_settings_vibrate_title">Dokunulduğunda titreştir</string>
-    <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
+    <string name="quick_settings_vibrate_summary">HA seçeneklerine dokunduğunda titre</string>
     <string name="tuner_title">Durum Çubuğu Simgesi Ayarlayıcı</string>
     <string name="tuner_summary">Durum çubuğu simgelerinin görünürlüğünü kontrol edin</string>
     <string name="allow_signature_fake">Allow signature spoofing</string>
@@ -90,7 +90,7 @@
     <string name="network_traffic_location_title">Location</string>
     <string name="network_traffic_location_disable">Disabled</string>
     <string name="network_traffic_location_statusbar">Statusbar</string>
-    <string name="network_traffic_location_quick_statusbar">Quick Statusbar</string>
+    <string name="network_traffic_location_quick_statusbar" comment="network_traffic_location_quick_statusbar" maxLength="20">Hızlı Durum Çubuğu</string>
     <string name="network_traffic_mode_title">Display mode</string>
     <string name="network_traffic_mode_up">Upload only</string>
     <string name="network_traffic_mode_down">Download only</string>
@@ -158,10 +158,10 @@
     <string name="lock_screen_custom_clock_face_default">Varsayılan</string>
     <string name="lock_screen_custom_clock_face_default_bold">Varsayılan (kalın)</string>
     <string name="lock_screen_custom_clock_face_analog">Analog</string>
-    <string name="lock_screen_custom_clock_face_bubble">Bubble</string>
+    <string name="lock_screen_custom_clock_face_bubble">Baloncuk</string>
     <string name="lock_screen_custom_clock_face_samsung">Samsung</string>
     <string name="lock_screen_custom_clock_face_samsung_bold">Samsung (kalın)</string>
-    <string name="lock_screen_custom_clock_face_samsung_highlight">Samsung (colored)</string>
-    <string name="lock_screen_custom_clock_face_typographic">Typographic</string>
+    <string name="lock_screen_custom_clock_face_samsung_highlight">Samsung (renkli)</string>
+    <string name="lock_screen_custom_clock_face_typographic">Tipografi</string>
     <string name="lock_screen_custom_clock_face_fluid">Fluid</string>
 </resources>
