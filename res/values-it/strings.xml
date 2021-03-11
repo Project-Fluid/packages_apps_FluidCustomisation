@@ -26,7 +26,7 @@
     <!-- Customization Categories/Fragment Titles -->
     <string name="clocksettings_title">Impostazioni Orologio</string>
     <string name="clocksettings_summary">Impostazioni Orologio Barra di Stato</string>
-    <string name="trafficsettings_title">Traffic Indicator</string>
+    <string name="trafficsettings_title">Indicatore Traffico Dati</string>
     <string name="trafficsettings_summary">Indicatore Traffico Internet Barra di Stato</string>
     <string name="customisation_systemtheme">Temi di Sistema</string>
     <!-- Customization Titles -->
@@ -43,7 +43,7 @@
     <string name="status_bar_am_pm_info">Orologio 24-Ore attivo</string>
     <string name="status_bar_am_pm_normal">Normale</string>
     <string name="status_bar_am_pm_small">Piccolo</string>
-    <string name="status_bar_am_pm_hidden">Nascosto (default)</string>
+    <string name="status_bar_am_pm_hidden">Nascosto (predefinito)</string>
     <string name="clock_seconds_display">Mostra secondi</string>
     <string name="clock_date_display">Data</string>
     <string name="clock_date_display_summary">Mostra data personalizzata prima dell\'orologio</string>
