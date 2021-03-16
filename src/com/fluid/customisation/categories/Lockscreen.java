@@ -40,6 +40,12 @@ public class Lockscreen extends SettingsPreferenceFragment implements Preference
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
     private static final String AOD_SCHEDULE_KEY = "always_on_display_schedule";
 
+    static final int MODE_DISABLED = 0;
+    static final int MODE_NIGHT = 1;
+    static final int MODE_TIME = 2;
+    static final int MODE_MIXED_SUNSET = 3;
+    static final int MODE_MIXED_SUNRISE = 4;
+
     private boolean mHasFod;
     private Preference mPocketJudge;
     private FingerprintManager mFingerprintManager;
@@ -106,14 +112,21 @@ public class Lockscreen extends SettingsPreferenceFragment implements Preference
         int mode = Settings.Secure.getIntForUser(getActivity().getContentResolver(),
                 Settings.Secure.DOZE_ALWAYS_ON_AUTO_MODE, 0, UserHandle.USER_CURRENT);
         switch (mode) {
-            case 0:
+            default:
+            case MODE_DISABLED:
                 mAODPref.setSummary(R.string.disabled);
                 break;
-            case 1:
+            case MODE_NIGHT:
                 mAODPref.setSummary(R.string.night_display_auto_mode_twilight);
                 break;
-            case 2:
+            case MODE_TIME:
                 mAODPref.setSummary(R.string.night_display_auto_mode_custom);
+                break;
+            case MODE_MIXED_SUNSET:
+                mAODPref.setSummary(R.string.always_on_display_schedule_mixed_sunset);
+                break;
+            case MODE_MIXED_SUNRISE:
+                mAODPref.setSummary(R.string.always_on_display_schedule_mixed_sunrise);
                 break;
         }
     }
