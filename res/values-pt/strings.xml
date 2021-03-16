@@ -16,30 +16,30 @@
 -->
 <resources>
     <!-- App name -->
-    <string name="customisation_settings_title">Fluid Customisation</string>
+    <string name="customisation_settings_title">Customizações Fluid</string>
     <!-- Customization Section Titles -->
-    <string name="customisation_themes">Themes</string>
-    <string name="customisation_statusbar">Status Bar</string>
-    <string name="customisation_qs">QS</string>
-    <string name="customisation_lockscreen">Lockscreen</string>
+    <string name="customisation_themes">Temas</string>
+    <string name="customisation_statusbar">Barra de Status</string>
+    <string name="customisation_qs" comment="customisation_qs" maxLength="13">QS</string>
+    <string name="customisation_lockscreen">Tela de Bloqueio</string>
     <string name="customisation_extras">Extras</string>
     <!-- Customization Categories/Fragment Titles -->
-    <string name="clocksettings_title">Clock Settings</string>
-    <string name="clocksettings_summary">Statusbar clock settings</string>
-    <string name="trafficsettings_title">Traffic Indicator</string>
-    <string name="trafficsettings_summary">Statusbar/Header traffic indicator settings</string>
-    <string name="customisation_systemtheme">System Theme</string>
+    <string name="clocksettings_title">Configurações do relógio</string>
+    <string name="clocksettings_summary">Configurações do relógio da barra de status</string>
+    <string name="trafficsettings_title">Indicador de Tráfego</string>
+    <string name="trafficsettings_summary">Configurações de indicador de tráfego na Barra de Status/Cabeçalho</string>
+    <string name="customisation_systemtheme">Tema do Sistema</string>
     <!-- Customization Titles -->
-    <string name="status_bar_clock_date_title">Clock and Date</string>
-    <string name="status_bar_clock_date_summary">Customize your statusbar clock and date</string>
-    <string name="status_bar_clock_title">Clock settings</string>
-    <string name="status_bar_clock_show">Show clock and date</string>
-    <string name="status_bar_clock_style_title">Clock style</string>
-    <string name="status_bar_clock_style_right">Right</string>
-    <string name="status_bar_clock_style_center">Center</string>
-    <string name="status_bar_clock_style_left">Left</string>
-    <string name="status_bar_date_title">Date settings</string>
-    <string name="status_bar_am_pm_title">AM/PM style</string>
+    <string name="status_bar_clock_date_title">Hora e Data</string>
+    <string name="status_bar_clock_date_summary">Customize a data/hora da barra de status</string>
+    <string name="status_bar_clock_title">Configurações do relógio</string>
+    <string name="status_bar_clock_show">Mostrar hora e data</string>
+    <string name="status_bar_clock_style_title">Estilo do relógio</string>
+    <string name="status_bar_clock_style_right">Direita</string>
+    <string name="status_bar_clock_style_center">Centro</string>
+    <string name="status_bar_clock_style_left">Esquerda</string>
+    <string name="status_bar_date_title">Configurações da data</string>
+    <string name="status_bar_am_pm_title">Estilo AM/PM</string>
     <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">Small</string>
@@ -90,7 +90,7 @@
     <string name="network_traffic_location_title">Location</string>
     <string name="network_traffic_location_disable">Disabled</string>
     <string name="network_traffic_location_statusbar">Statusbar</string>
-    <string name="network_traffic_location_quick_statusbar">Quick Statusbar</string>
+    <string name="network_traffic_location_quick_statusbar" comment="network_traffic_location_quick_statusbar" maxLength="20">Quick Statusbar</string>
     <string name="network_traffic_mode_title">Display mode</string>
     <string name="network_traffic_mode_up">Upload only</string>
     <string name="network_traffic_mode_down">Download only</string>
