@@ -20,7 +20,7 @@
     <!-- Customization Section Titles -->
     <string name="customisation_themes">Temas</string>
     <string name="customisation_statusbar">Barra de estado</string>
-    <string name="customisation_qs">Ajustes rápidos</string>
+    <string name="customisation_qs" comment="customisation_qs" maxLength="13">Ajustes rápidos</string>
     <string name="customisation_lockscreen">Pantalla de bloqueo</string>
     <string name="customisation_extras">Extras</string>
     <!-- Customization Categories/Fragment Titles -->
