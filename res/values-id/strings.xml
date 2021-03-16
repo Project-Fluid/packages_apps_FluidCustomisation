@@ -20,7 +20,7 @@
     <!-- Customization Section Titles -->
     <string name="customisation_themes">Tema</string>
     <string name="customisation_statusbar">Bar Status</string>
-    <string name="customisation_qs">QS</string>
+    <string name="customisation_qs" comment="customisation_qs" maxLength="13">QS</string>
     <string name="customisation_lockscreen">Layar Kunci</string>
     <string name="customisation_extras">Tambahan</string>
     <!-- Customization Categories/Fragment Titles -->
@@ -31,7 +31,7 @@
     <string name="customisation_systemtheme">Tema Sistem</string>
     <!-- Customization Titles -->
     <string name="status_bar_clock_date_title">Jam Dan Tanggal</string>
-    <string name="status_bar_clock_date_summary">Kustomisasi bar status, jam, dan tanggalmu</string>
+    <string name="status_bar_clock_date_summary">Kustomisasi bar status, jam, dan tanggal</string>
     <string name="status_bar_clock_title">Pengaturan Jam</string>
     <string name="status_bar_clock_show">Tampilkan Jam dan Tanggal</string>
     <string name="status_bar_clock_style_title">Gaya Jam</string>
@@ -46,7 +46,7 @@
     <string name="status_bar_am_pm_hidden">Sembunyikan (standar)</string>
     <string name="clock_seconds_display">Tampilkan Detik</string>
     <string name="clock_date_display">Tanggal</string>
-    <string name="clock_date_display_summary">Tampilkan Data Kustom Sebelum Jam</string>
+    <string name="clock_date_display_summary">Tampilkan tanggal kustom sebelum jam</string>
     <string name="clock_date_display_none">Jangan Tampilkan</string>
     <string name="clock_date_display_small">Ukuran Fon Kecil</string>
     <string name="clock_date_display_normal">Ukuran Fon Normal</string>
