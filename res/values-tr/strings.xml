@@ -20,7 +20,7 @@
     <!-- Customization Section Titles -->
     <string name="customisation_themes">Temalar</string>
     <string name="customisation_statusbar">Durum Çubuğu</string>
-    <string name="customisation_qs">HA</string>
+    <string name="customisation_qs" comment="customisation_qs" maxLength="13">HA</string>
     <string name="customisation_lockscreen">Kilit Ekranı</string>
     <string name="customisation_extras">Ekstralar</string>
     <!-- Customization Categories/Fragment Titles -->
