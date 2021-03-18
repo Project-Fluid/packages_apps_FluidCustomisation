@@ -30,8 +30,8 @@
     <string name="trafficsettings_summary">Настройки индикатора трафика</string>
     <string name="customisation_systemtheme">Тема системы</string>
     <!-- Customization Titles -->
-    <string name="status_bar_clock_date_title">Часы и дата</string>
-    <string name="status_bar_clock_date_summary">Настройки часов и даты в строке состояния</string>
+    <string name="status_bar_clock_date_title">Дата и время</string>
+    <string name="status_bar_clock_date_summary">Настройки даты и времени в строке состояния</string>
     <string name="status_bar_clock_title">Настройки часов</string>
     <string name="status_bar_clock_show">Показывать часы и дату</string>
     <string name="status_bar_clock_style_title">Стиль часов</string>
