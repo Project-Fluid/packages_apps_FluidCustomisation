@@ -33,7 +33,7 @@
     <string name="status_bar_clock_date_title">Дата и время</string>
     <string name="status_bar_clock_date_summary">Настройки даты и времени в строке состояния</string>
     <string name="status_bar_clock_title">Настройки часов</string>
-    <string name="status_bar_clock_show">Показывать часы и дату</string>
+    <string name="status_bar_clock_show">Показывать дату и время</string>
     <string name="status_bar_clock_style_title">Стиль часов</string>
     <string name="status_bar_clock_style_right">Справа</string>
     <string name="status_bar_clock_style_center">По центру</string>
@@ -112,7 +112,7 @@
     <string name="network_traffic_hidearrow">Скрывать стрелки</string>
     <string name="network_traffic_hidearrow_summary">Скрыть стрелки индикатора сетевого трафика</string>
     <string name="network_traffic_refresh_interval_title">Интервал обновления</string>
-    <string name="network_traffic_refresh_interval_summary">Период времени, после которого скорость измеряется</string>
+    <string name="network_traffic_refresh_interval_summary">Период времени, после которого скорость повторно измеряется</string>
     <string name="unit_seconds">секунд</string>
     <string name="qs_media_player_title">Проигрыватель медиа на панели быстрых настроек</string>
     <string name="qs_media_player_summary_on">Отображать проигрыватель в панели быстрых настроек.\nТребует перезагрузку SystemUI</string>
@@ -143,7 +143,7 @@
     <string name="incall_vibrate_call_wait_title">Вибрировать при ожидании вызова</string>
     <string name="incall_vibrate_call_wait_summary">Вибрировать во время ожидания вызова</string>
     <string name="incall_vibrate_disconnect_title">Вибрировать при отключении</string>
-    <string name="incall_vibrate_disconnect_summary">Вибрировать после отсоединения от абонента</string>
+    <string name="incall_vibrate_disconnect_summary">Вибрировать после разъединения вызова</string>
     <!-- Theming -->
     <string name="themes_ui">Пользовательский интерфейс</string>
     <string name="theme_customization_sysui_icon_title">Тема системы</string>
