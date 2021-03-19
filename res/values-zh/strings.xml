@@ -78,7 +78,7 @@
     <string name="double_tap_sleep_lockscreen_title">双击息屏</string>
     <string name="double_tap_sleep_lockscreen_summary">双击锁屏的任意位置以使设备进入睡眠</string>
     <string name="use_old_mobiletype_title">使用旧式移动数据图标</string>
-    <string name="use_old_mobiletype_summary">使用 Android P 之前版本的移动数据图标来显示信号（需要重启）</string>
+    <string name="use_old_mobiletype_summary">Use pre-p mobiletype icons for signal (Reboot required)</string>
     <string name="quick_settings_vibrate_title">触摸振动</string>
     <string name="quick_settings_vibrate_summary">触摸 QS 磁贴时振动</string>
     <string name="tuner_title">状态栏图标调谐器</string>
@@ -127,7 +127,7 @@
     <string name="navbar_layout_rightleaning">右倾</string>
     <string name="pocket_judge_title">口袋检测</string>
     <string name="pocket_judge_summary">当设备放在口袋中时阻止屏幕输入</string>
-    <string name="fod_recog_animation">FOD 识别动画</string>
+    <string name="fod_recog_animation">FOD recognizing animation</string>
     <string name="fod_recog_animation_summary">在触摸时显示动画</string>
     <string name="battery_style_title">电池样式</string>
     <string name="battery_style_port">纵向</string>
@@ -149,7 +149,7 @@
     <string name="theme_customization_sysui_icon_title">系统主题</string>
     <string name="clock_style_title">锁屏时钟</string>
     <string name="clock_style_summary">自定义您的锁屏时钟</string>
-    <string name="accent_prebuilt">Accent 颜色 - 预设</string>
+    <string name="accent_prebuilt">Accent color - Prebuilt</string>
     <string name="accent_prebuilt_summary">从我们的预设中选择一个强调色！</string>
     <string name="theme_customization_systemui_title">主要主题</string>
     <!-- Lockscreen Clocks -->
