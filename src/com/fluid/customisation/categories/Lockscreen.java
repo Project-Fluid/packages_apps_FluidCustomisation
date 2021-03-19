@@ -22,6 +22,7 @@ import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
+import android.hardware.fingerprint.FingerprintManager;
 import androidx.preference.*;
 import com.android.internal.util.custom.FodUtils;
 import android.provider.Settings;
@@ -70,7 +71,7 @@ public class Lockscreen extends SettingsPreferenceFragment implements Preference
        // FP vibration
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_VIB);
-        if (!mFingerprintManager.isHardwareDetected()){
+        if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()){
             prefScreen.removePreference(mFingerprintVib);
         } else {
             mFingerprintVib.setChecked((Settings.System.getInt(getContentResolver(),
@@ -98,7 +99,7 @@ public class Lockscreen extends SettingsPreferenceFragment implements Preference
         final String key = preference.getKey();
         ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mFingerprintVib) {
-            boolean value = (Boolean) newValue;
+            boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver,
                     Settings.System.FINGERPRINT_SUCCESS_VIB, value ? 1 : 0);
         }
