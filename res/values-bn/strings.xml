@@ -20,7 +20,7 @@
     <!-- Customization Section Titles -->
     <string name="customisation_themes">থিম</string>
     <string name="customisation_statusbar">স্ট্যাটাস বার</string>
-    <string name="customisation_qs" comment="customisation_qs" maxLength="13">QS</string>
+    <string name="customisation_qs">QS</string>
     <string name="customisation_lockscreen">লক স্ক্রিন</string>
     <string name="customisation_extras">বাড়তি</string>
     <!-- Customization Categories/Fragment Titles -->
@@ -90,7 +90,7 @@
     <string name="network_traffic_location_title">অবস্থান</string>
     <string name="network_traffic_location_disable">অক্ষমকৃত</string>
     <string name="network_traffic_location_statusbar">স্ট্যাটাস বার</string>
-    <string name="network_traffic_location_quick_statusbar" comment="network_traffic_location_quick_statusbar" maxLength="20">কুইক স্ট্যাটাস বার</string>
+    <string name="network_traffic_location_quick_statusbar">কুইক স্ট্যাটাস বার</string>
     <string name="network_traffic_mode_title">ডিসপ্লে মোড</string>
     <string name="network_traffic_mode_up">শুধু আপলোড</string>
     <string name="network_traffic_mode_down">শুধু ডাউনলোড</string>
@@ -144,6 +144,8 @@
     <string name="incall_vibrate_call_wait_summary">কল ওয়েটিং এ থাকলে ভাইব্রেট করো</string>
     <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
     <string name="incall_vibrate_disconnect_summary">Enable to vibrate after call disconnect</string>
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
     <!-- Theming -->
     <string name="themes_ui">UI</string>
     <string name="theme_customization_sysui_icon_title">System Theme</string>
