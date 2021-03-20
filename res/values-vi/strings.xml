@@ -20,7 +20,7 @@
     <!-- Customization Section Titles -->
     <string name="customisation_themes">Chủ đề</string>
     <string name="customisation_statusbar">Thanh Trạng Thái</string>
-    <string name="customisation_qs" comment="customisation_qs" maxLength="13">Thiết lập nhanh</string>
+    <string name="customisation_qs">Thiết lập nhanh</string>
     <string name="customisation_lockscreen">Màn hình khoá</string>
     <string name="customisation_extras">Bổ sung</string>
     <!-- Customization Categories/Fragment Titles -->
@@ -90,7 +90,7 @@
     <string name="network_traffic_location_title">Vị trí</string>
     <string name="network_traffic_location_disable">Đã tắt</string>
     <string name="network_traffic_location_statusbar">Thanh thông báo</string>
-    <string name="network_traffic_location_quick_statusbar" comment="network_traffic_location_quick_statusbar" maxLength="20">QS Nhanh</string>
+    <string name="network_traffic_location_quick_statusbar">QS Nhanh</string>
     <string name="network_traffic_mode_title">Chế độ hiển thị</string>
     <string name="network_traffic_mode_up">Chỉ tải lên</string>
     <string name="network_traffic_mode_down">Chỉ tải xuống</string>
@@ -144,6 +144,8 @@
     <string name="incall_vibrate_call_wait_summary">Bật chế độ rung khi cuộc gọi đang chờ</string>
     <string name="incall_vibrate_disconnect_title">Rung khi ngắt kết nối</string>
     <string name="incall_vibrate_disconnect_summary">Bật rung sau khi ngắt kết nối cuộc gọi</string>
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
     <!-- Theming -->
     <string name="themes_ui">Giao diện</string>
     <string name="theme_customization_sysui_icon_title">Chủ đề hệ thống</string>
