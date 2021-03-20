@@ -20,7 +20,7 @@
     <!-- Customization Section Titles -->
     <string name="customisation_themes">Motywy</string>
     <string name="customisation_statusbar">Pasek Stanu</string>
-    <string name="customisation_qs" comment="customisation_qs" maxLength="13">Szybkie Ustawienia</string>
+    <string name="customisation_qs">Szybkie Ustawienia</string>
     <string name="customisation_lockscreen">Ekran blokady ekranu</string>
     <string name="customisation_extras">Dodatki</string>
     <!-- Customization Categories/Fragment Titles -->
@@ -90,7 +90,7 @@
     <string name="network_traffic_location_title">Lokalizacja</string>
     <string name="network_traffic_location_disable">Wyłączone</string>
     <string name="network_traffic_location_statusbar">Pasek Stanu</string>
-    <string name="network_traffic_location_quick_statusbar" comment="network_traffic_location_quick_statusbar" maxLength="20">Szybki pasek stanu</string>
+    <string name="network_traffic_location_quick_statusbar">Szybki pasek stanu</string>
     <string name="network_traffic_mode_title">Tryb wyświetlania</string>
     <string name="network_traffic_mode_up">Tylko ruch wychodzący</string>
     <string name="network_traffic_mode_down">Tylko ruch przychodzący</string>
@@ -144,6 +144,8 @@
     <string name="incall_vibrate_call_wait_summary">Włącz wibracje podczas oczekiwania na połączenie</string>
     <string name="incall_vibrate_disconnect_title">Wibracje po odłączeniu</string>
     <string name="incall_vibrate_disconnect_summary">Włącz wibracje po rozłączeniu połączenia</string>
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
     <!-- Theming -->
     <string name="themes_ui">UI</string>
     <string name="theme_customization_sysui_icon_title">Motyw Systemu</string>
