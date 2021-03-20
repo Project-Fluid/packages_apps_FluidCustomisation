@@ -20,7 +20,7 @@
     <!-- Customization Section Titles -->
     <string name="customisation_themes">Temalar</string>
     <string name="customisation_statusbar">Durum Çubuğu</string>
-    <string name="customisation_qs" comment="customisation_qs" maxLength="13">HA</string>
+    <string name="customisation_qs">HA</string>
     <string name="customisation_lockscreen">Kilit Ekranı</string>
     <string name="customisation_extras">Ekstralar</string>
     <!-- Customization Categories/Fragment Titles -->
@@ -90,7 +90,7 @@
     <string name="network_traffic_location_title">Konum</string>
     <string name="network_traffic_location_disable">Devre dışı</string>
     <string name="network_traffic_location_statusbar">Durum Çubuğu</string>
-    <string name="network_traffic_location_quick_statusbar" comment="network_traffic_location_quick_statusbar" maxLength="20">Hızlı Durum Çubuğu</string>
+    <string name="network_traffic_location_quick_statusbar">Hızlı Durum Çubuğu</string>
     <string name="network_traffic_mode_title">Görüntü modu</string>
     <string name="network_traffic_mode_up">Sadece yükleme</string>
     <string name="network_traffic_mode_down">Sadece indirme</string>
@@ -144,6 +144,8 @@
     <string name="incall_vibrate_call_wait_summary">Çağrı beklenirken titretmeyi etkinleştir</string>
     <string name="incall_vibrate_disconnect_title">Çağrı bağlantısının kesilmesinde titret</string>
     <string name="incall_vibrate_disconnect_summary">Çağrı bağlantısı kesildikten sonra titretmeyi etkinleştir</string>
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
     <!-- Theming -->
     <string name="themes_ui">Arayüz</string>
     <string name="theme_customization_sysui_icon_title">Sistem Teması</string>
