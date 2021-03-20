@@ -20,7 +20,7 @@
     <!-- Customization Section Titles -->
     <string name="customisation_themes">Tema</string>
     <string name="customisation_statusbar">Bar Status</string>
-    <string name="customisation_qs" comment="customisation_qs" maxLength="13">QS</string>
+    <string name="customisation_qs">QS</string>
     <string name="customisation_lockscreen">Layar Kunci</string>
     <string name="customisation_extras">Tambahan</string>
     <!-- Customization Categories/Fragment Titles -->
@@ -90,7 +90,7 @@
     <string name="network_traffic_location_title">Lokasi</string>
     <string name="network_traffic_location_disable">Dimatikan</string>
     <string name="network_traffic_location_statusbar">Bar Status</string>
-    <string name="network_traffic_location_quick_statusbar" comment="network_traffic_location_quick_statusbar" maxLength="20">Bar Status cepat</string>
+    <string name="network_traffic_location_quick_statusbar">Bar Status cepat</string>
     <string name="network_traffic_mode_title">Mode tampilan</string>
     <string name="network_traffic_mode_up">Hanya upload</string>
     <string name="network_traffic_mode_down">Hanya download</string>
@@ -144,6 +144,8 @@
     <string name="incall_vibrate_call_wait_summary">Aktifkan getaran saat panggilan menunggu</string>
     <string name="incall_vibrate_disconnect_title">Getar saat terputus</string>
     <string name="incall_vibrate_disconnect_summary">Aktifkan getaran saat panggilan terputus</string>
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
     <!-- Theming -->
     <string name="themes_ui">Antarmuka</string>
     <string name="theme_customization_sysui_icon_title">Tema Sistem</string>
