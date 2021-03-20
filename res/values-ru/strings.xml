@@ -20,7 +20,7 @@
     <!-- Customization Section Titles -->
     <string name="customisation_themes">Темы</string>
     <string name="customisation_statusbar">Строка состояния</string>
-    <string name="customisation_qs" comment="customisation_qs" maxLength="13">Быстрые настройки</string>
+    <string name="customisation_qs">Быстрые настройки</string>
     <string name="customisation_lockscreen">Экран блокировки</string>
     <string name="customisation_extras">Прочее</string>
     <!-- Customization Categories/Fragment Titles -->
@@ -90,7 +90,7 @@
     <string name="network_traffic_location_title">Местоположение</string>
     <string name="network_traffic_location_disable">Выключено</string>
     <string name="network_traffic_location_statusbar">Строка состояния</string>
-    <string name="network_traffic_location_quick_statusbar" comment="network_traffic_location_quick_statusbar" maxLength="20">Панель быстрых настроек</string>
+    <string name="network_traffic_location_quick_statusbar">Панель быстрых настроек</string>
     <string name="network_traffic_mode_title">Режим отображения</string>
     <string name="network_traffic_mode_up">Только отдача</string>
     <string name="network_traffic_mode_down">Только приём</string>
@@ -144,6 +144,8 @@
     <string name="incall_vibrate_call_wait_summary">Вибрировать во время ожидания вызова</string>
     <string name="incall_vibrate_disconnect_title">Вибрировать при отключении</string>
     <string name="incall_vibrate_disconnect_summary">Вибрировать после разъединения вызова</string>
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
     <!-- Theming -->
     <string name="themes_ui">Пользовательский интерфейс</string>
     <string name="theme_customization_sysui_icon_title">Тема системы</string>
