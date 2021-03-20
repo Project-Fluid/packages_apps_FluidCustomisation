@@ -90,7 +90,7 @@
     <string name="network_traffic_location_title">Posizione</string>
     <string name="network_traffic_location_disable">Disabilitata</string>
     <string name="network_traffic_location_statusbar">Barra di stato</string>
-    <string name="network_traffic_location_quick_statusbar" comment="network_traffic_location_quick_statusbar" maxLength="20">Statusbar rapida</string>
+    <string name="network_traffic_location_quick_statusbar">Statusbar rapida</string>
     <string name="network_traffic_mode_title">Modalità di visualizzazione</string>
     <string name="network_traffic_mode_up">Solo upload</string>
     <string name="network_traffic_mode_down">Solo download</string>
@@ -144,6 +144,8 @@
     <string name="incall_vibrate_call_wait_summary">Abilita per vibrare quando una chiamata è in attesa</string>
     <string name="incall_vibrate_disconnect_title">Vibra alla disconnessione</string>
     <string name="incall_vibrate_disconnect_summary">Abilitare per far vibrare alla disconnessione della chiamata</string>
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
     <!-- Theming -->
     <string name="themes_ui">UI</string>
     <string name="theme_customization_sysui_icon_title">Tema del Sistema</string>
