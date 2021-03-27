@@ -144,8 +144,8 @@
     <string name="incall_vibrate_call_wait_summary">Вибрировать во время ожидания вызова</string>
     <string name="incall_vibrate_disconnect_title">Вибрировать при отключении</string>
     <string name="incall_vibrate_disconnect_summary">Вибрировать после разъединения вызова</string>
-    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
-    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+    <string name="fprint_sucess_vib_title">Вибрация при успешной разблокировке</string>
+    <string name="fprint_sucess_vib_summary">Вибрировать при успешной разблокировке по отпечатку пальца</string>
     <!-- Theming -->
     <string name="themes_ui">Пользовательский интерфейс</string>
     <string name="theme_customization_sysui_icon_title">Тема системы</string>
