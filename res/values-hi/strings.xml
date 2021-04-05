@@ -158,7 +158,7 @@
     <string name="lock_screen_custom_clock_face_category">लॉक स्क्रीन घड़ी</string>
     <string name="lock_screen_custom_clock_face_title">लॉक स्क्रीन घड़ी शैली</string>
     <string name="lock_screen_custom_clock_face_default">Default</string>
-    <string name="lock_screen_custom_clock_face_default_bold">Default (bold)</string>
+    <string name="lock_screen_custom_clock_face_default_bold">डिफ़ॉल्ट (मोटा)</string>
     <string name="lock_screen_custom_clock_face_analog">समानांतर</string>
     <string name="lock_screen_custom_clock_face_bubble">बुलबुला</string>
     <string name="lock_screen_custom_clock_face_samsung">सैमसंग</string>
