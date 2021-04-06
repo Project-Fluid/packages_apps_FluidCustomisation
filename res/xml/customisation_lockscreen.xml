@@ -19,11 +19,16 @@
      xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
      android:title="@string/customisation_lockscreen" >
 
+    <Preference
+        android:key="always_on_display_schedule"
+        android:title="@string/always_on_display_schedule_title"
+        android:fragment="com.fluid.customisation.fragments.AODSchedule" />
+
     <com.fluid.customisation.preference.SystemSettingSwitchPreference
-            android:key="volume_rocker_wake"
-            android:summary="@string/volume_rocker_wake_summary"
-            android:title="@string/volume_rocker_wake_title"
-            android:defaultValue="false" />
+        android:key="volume_rocker_wake"
+        android:summary="@string/volume_rocker_wake_summary"
+        android:title="@string/volume_rocker_wake_title"
+        android:defaultValue="false" />
 
     <com.fluid.customisation.preference.SystemSettingSwitchPreference
         android:key="lockscreen_battery_info"
