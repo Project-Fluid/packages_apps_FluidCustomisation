@@ -25,6 +25,12 @@
             android:title="@string/volume_rocker_music_controls_title"
             android:defaultValue="false" />
 
+        <com.fluid.customisation.preference.SystemSettingSwitchPreference
+            android:key="show_app_volume"
+            android:title="@string/show_app_volume_title"
+            android:summary="@string/show_app_volume_summary"
+            android:defaultValue="false" />
+
         <com.fluid.customisation.preference.GlobalSettingSwitchPreference
             android:key="allow_signature_fake"
             android:title="@string/allow_signature_fake"
