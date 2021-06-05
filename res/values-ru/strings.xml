@@ -152,6 +152,16 @@
     <string name="always_on_display_schedule_mixed_sunset">Включается от заката до времени</string>
     <string name="always_on_display_schedule_mixed_sunrise">Включается от времени до восхода солнца</string>
     <string name="disabled">Отключено</string>
+    <string name="show_app_volume_title">Per-app volume control</string>
+    <string name="show_app_volume_summary">Control app volume from volume panel</string>
+    <string name="cutout_main">Display Cutout</string>
+    <string name="cutout_main_summary">They really cut corners with this one</string>
+    <string name="display_cutout_style_title">Cutout style</string>
+    <string name="display_cutout_style_normal">Normal</string>
+    <string name="display_cutout_style_immerse">Immerse</string>
+    <string name="display_cutout_style_hide">Hide</string>
+    <string name="stock_statusbar_in_hide">Stock statusbar height</string>
+    <string name="stock_statusbar_in_hide_summary">Use default statusbar height in Hide</string>
     <!-- Theming -->
     <string name="themes_ui">Пользовательский интерфейс</string>
     <string name="theme_customization_sysui_icon_title">Тема системы</string>
