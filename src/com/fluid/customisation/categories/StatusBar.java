@@ -29,6 +29,7 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
+import android.text.TextUtils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -45,6 +46,7 @@ public class StatusBar extends SettingsPreferenceFragment implements Preference.
     private static final String SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String SHOW_BATTERY_PERCENT_INSIDE = "status_bar_show_battery_percent_inside";
 
+
     private SystemSettingListPreference mBatteryStyle;
     private SystemSettingSwitchPreference mBatteryPercent;
     private SystemSettingSwitchPreference mBatteryPercentInside;
@@ -58,6 +60,12 @@ public class StatusBar extends SettingsPreferenceFragment implements Preference.
 
         ContentResolver resolver = getActivity().getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
+        PreferenceScreen mCutoutPref = (PreferenceScreen) findPreference("notch_settings");
+        String hasDisplayCutout = getResources().getString(com.android.internal.R.string.config_mainBuiltInDisplayCutout);
+
+        if (TextUtils.isEmpty(hasDisplayCutout)) {
+            prefSet.removePreference(mCutoutPref);
+        }
 
         mBatteryPercentInside = (SystemSettingSwitchPreference)
                 findPreference(SHOW_BATTERY_PERCENT_INSIDE);
