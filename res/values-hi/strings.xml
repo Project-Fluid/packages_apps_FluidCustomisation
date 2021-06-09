@@ -20,7 +20,7 @@
     <!-- Customization Section Titles -->
     <string name="customisation_themes">प्रणाली</string>
     <string name="customisation_statusbar">स्थितियां बार</string>
-    <string name="customisation_qs" comment="customisation_qs" maxLength="13">जल्द विन्यास</string>
+    <string name="customisation_qs">जल्द विन्यास</string>
     <string name="customisation_lockscreen">लॉक स्क्रीन</string>
     <string name="customisation_extras">अतिरिक्त</string>
     <!-- Customization Categories/Fragment Titles -->
@@ -90,7 +90,7 @@
     <string name="network_traffic_location_title">स्थान</string>
     <string name="network_traffic_location_disable">बंद किया हुआ</string>
     <string name="network_traffic_location_statusbar">स्टेटस बार</string>
-    <string name="network_traffic_location_quick_statusbar" comment="network_traffic_location_quick_statusbar" maxLength="20">शीघ्र स्टेटस बार</string>
+    <string name="network_traffic_location_quick_statusbar">शीघ्र स्टेटस बार</string>
     <string name="network_traffic_mode_title">प्रदर्शन का ढंग</string>
     <string name="network_traffic_mode_up">केवल अपलोड</string>
     <string name="network_traffic_mode_down">केवल डाउनलोड</string>
@@ -144,6 +144,24 @@
     <string name="incall_vibrate_call_wait_summary">Enable to vibrate while call is on waiting</string>
     <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
     <string name="incall_vibrate_disconnect_summary">Enable to vibrate after call disconnect</string>
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+    <string name="always_on_display_schedule_title">Always on display schedule</string>
+    <string name="always_on_display_schedule_sunset">Sunset</string>
+    <string name="always_on_display_schedule_sunrise">Sunrise</string>
+    <string name="always_on_display_schedule_mixed_sunset">Turns on from sunset till a time</string>
+    <string name="always_on_display_schedule_mixed_sunrise">Turns on from a time till sunrise</string>
+    <string name="disabled">Disabled</string>
+    <string name="show_app_volume_title">Per-app volume control</string>
+    <string name="show_app_volume_summary">Control app volume from volume panel</string>
+    <string name="cutout_main">Display Cutout</string>
+    <string name="cutout_main_summary">They really cut corners with this one</string>
+    <string name="display_cutout_style_title">Cutout style</string>
+    <string name="display_cutout_style_normal">Normal</string>
+    <string name="display_cutout_style_immerse">Immerse</string>
+    <string name="display_cutout_style_hide">Hide</string>
+    <string name="stock_statusbar_in_hide">Stock statusbar height</string>
+    <string name="stock_statusbar_in_hide_summary">Use default statusbar height in Hide</string>
     <!-- Theming -->
     <string name="themes_ui">UI</string>
     <string name="theme_customization_sysui_icon_title">सिस्टम शैली</string>
@@ -156,7 +174,7 @@
     <string name="lock_screen_custom_clock_face_category">लॉक स्क्रीन घड़ी</string>
     <string name="lock_screen_custom_clock_face_title">लॉक स्क्रीन घड़ी शैली</string>
     <string name="lock_screen_custom_clock_face_default">Default</string>
-    <string name="lock_screen_custom_clock_face_default_bold">Default (bold)</string>
+    <string name="lock_screen_custom_clock_face_default_bold">डिफ़ॉल्ट (मोटा)</string>
     <string name="lock_screen_custom_clock_face_analog">समानांतर</string>
     <string name="lock_screen_custom_clock_face_bubble">बुलबुला</string>
     <string name="lock_screen_custom_clock_face_samsung">सैमसंग</string>

@@ -20,7 +20,7 @@
     <!-- Customization Section Titles -->
     <string name="customisation_themes">Temas</string>
     <string name="customisation_statusbar">Barra de Status</string>
-    <string name="customisation_qs" comment="customisation_qs" maxLength="13">QS</string>
+    <string name="customisation_qs">QS</string>
     <string name="customisation_lockscreen">Tela de Bloqueio</string>
     <string name="customisation_extras">Extras</string>
     <!-- Customization Categories/Fragment Titles -->
@@ -58,14 +58,14 @@
     <string name="clock_date_format">Date format</string>
     <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">Enter string</string>
-    <string name="clock_date_right">Right of time</string>
-    <string name="clock_date_left">Left of time</string>
-    <string name="clock_date_position">Date position</string>
-    <string name="volume_rocker_music_controls_title">Playback control</string>
-    <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
-    <string name="volume_rocker_wake_title">Volume rocker wake</string>
-    <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
-    <string name="show_fourg_title">Show 4G instead of LTE</string>
+    <string name="clock_date_right">A direita do relógio</string>
+    <string name="clock_date_left">A esquerda do relógio</string>
+    <string name="clock_date_position">Posição da data</string>
+    <string name="volume_rocker_music_controls_title">Controle de Playback</string>
+    <string name="volume_rocker_music_controls_summary">Quando a tela está desligada, manter as teclas de volume pressionadas buscará as faixas</string>
+    <string name="volume_rocker_wake_title">Despertar tela</string>
+    <string name="volume_rocker_wake_summary">Pressionar as teclas de volume irá despertar seu dispositivo</string>
+    <string name="show_fourg_title">Mostrar ícone 4G ao invés de LTE</string>
     <string name="show_fourg_summary">Replaces LTE statusbar indicators with 4G</string>
     <string name="data_disabled_icon_title">Data disabled icon</string>
     <string name="data_disabled_icon_summary">Display a cross sign next to signal bar when data is disabled</string>
@@ -90,7 +90,7 @@
     <string name="network_traffic_location_title">Location</string>
     <string name="network_traffic_location_disable">Disabled</string>
     <string name="network_traffic_location_statusbar">Statusbar</string>
-    <string name="network_traffic_location_quick_statusbar" comment="network_traffic_location_quick_statusbar" maxLength="20">Quick Statusbar</string>
+    <string name="network_traffic_location_quick_statusbar">Quick Statusbar</string>
     <string name="network_traffic_mode_title">Display mode</string>
     <string name="network_traffic_mode_up">Upload only</string>
     <string name="network_traffic_mode_down">Download only</string>
@@ -144,6 +144,24 @@
     <string name="incall_vibrate_call_wait_summary">Enable to vibrate while call is on waiting</string>
     <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
     <string name="incall_vibrate_disconnect_summary">Enable to vibrate after call disconnect</string>
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+    <string name="always_on_display_schedule_title">Always on display schedule</string>
+    <string name="always_on_display_schedule_sunset">Sunset</string>
+    <string name="always_on_display_schedule_sunrise">Sunrise</string>
+    <string name="always_on_display_schedule_mixed_sunset">Turns on from sunset till a time</string>
+    <string name="always_on_display_schedule_mixed_sunrise">Turns on from a time till sunrise</string>
+    <string name="disabled">Disabled</string>
+    <string name="show_app_volume_title">Per-app volume control</string>
+    <string name="show_app_volume_summary">Control app volume from volume panel</string>
+    <string name="cutout_main">Display Cutout</string>
+    <string name="cutout_main_summary">They really cut corners with this one</string>
+    <string name="display_cutout_style_title">Cutout style</string>
+    <string name="display_cutout_style_normal">Normal</string>
+    <string name="display_cutout_style_immerse">Immerse</string>
+    <string name="display_cutout_style_hide">Hide</string>
+    <string name="stock_statusbar_in_hide">Stock statusbar height</string>
+    <string name="stock_statusbar_in_hide_summary">Use default statusbar height in Hide</string>
     <!-- Theming -->
     <string name="themes_ui">UI</string>
     <string name="theme_customization_sysui_icon_title">System Theme</string>
