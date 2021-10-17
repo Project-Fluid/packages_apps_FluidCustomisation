@@ -28,7 +28,7 @@ import com.android.settings.SettingsPreferenceFragment
 class FluidCustomisation : SettingsPreferenceFragment(), Preference.OnPreferenceChangeListener {
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
-        setPreferencesFromResource(R.xml.customisation_main, rootKey)
+        addPreferencesFromResource(R.xml.customisation_main)
     }
 
     override fun onPreferenceChange(preference: Preference, newValue: Any?): Boolean {
