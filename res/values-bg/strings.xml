@@ -19,6 +19,8 @@
     <string name="customisation_settings_title">Fluid Customisation</string>
 
     <!-- Customization Titles -->
+    <string name="double_tap_sleep_gesture_title">Двойно натискане за спане на статубар</string>
+    <string name="double_tap_sleep_gesture_summary">Натиснете два пъти на статусбара за да изключите екрана</string>
     <string name="double_tap_sleep_lockscreen_title">Двойно натискане за спане на заключен екран</string>
     <string name="double_tap_sleep_lockscreen_summary">Натиснете два пъти в заключения екран за да изключите екрана</string>
 </resources>
