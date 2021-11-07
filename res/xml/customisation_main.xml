@@ -19,4 +19,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/customisation_settings_title" >
 
+    <org.projectfluid.customisation.preference.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_lockscreen"
+        android:title="@string/double_tap_sleep_lockscreen_title"
+        android:summary="@string/double_tap_sleep_lockscreen_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>

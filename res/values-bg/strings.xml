@@ -19,6 +19,6 @@
     <string name="customisation_settings_title">Fluid Customisation</string>
 
     <!-- Customization Titles -->
-    <string name="double_tap_sleep_lockscreen_title">Double tap to sleep</string>
-    <string name="double_tap_sleep_lockscreen_summary">Double tap anywhere on the lockscreen to put phone to sleep</string>
+    <string name="double_tap_sleep_lockscreen_title">Двойно натискане за спане на заключен екран</string>
+    <string name="double_tap_sleep_lockscreen_summary">Натиснете два пъти в заключения екран за да изключите екрана</string>
 </resources>
