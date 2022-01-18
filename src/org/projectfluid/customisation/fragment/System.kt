@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.projectfluid.customisation
+package org.projectfluid.customisation.fragment
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent
 
@@ -25,10 +25,10 @@ import androidx.preference.Preference
 import com.android.settings.R
 import com.android.settings.SettingsPreferenceFragment
 
-class FluidCustomisation : SettingsPreferenceFragment(), Preference.OnPreferenceChangeListener {
+class System : SettingsPreferenceFragment(), Preference.OnPreferenceChangeListener {
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
-        addPreferencesFromResource(R.xml.home)
+        addPreferencesFromResource(R.xml.system)
     }
 
     override fun onPreferenceChange(preference: Preference, newValue: Any?): Boolean {

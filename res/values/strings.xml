@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2021 Project Fluid
+<!-- Copyright (C) 2022 Project Fluid
     
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -18,9 +18,23 @@
     <!-- App name --> 
     <string name="customisation_settings_title">Fluid Customisation</string>
 
-    <!-- Customization Titles -->
+    <!-- Home page -->
+    <string name="statusbar_title">Status bar</string>
+    <string name="statusbar_summary">Tweak status bar elements</string>
+    <string name="qs_title">Quick Settings</string>
+    <string name="qs_summary">Customise your QS panel</string>
+    <string name="system_title">System tweaks</string>
+    <string name="system_summary">Change system elements</string>
+    <string name="misc_title">Miscellaneous</string>
+    <string name="misc_summary">Everything which doesn\’t fit elsewhere</string>
+
+    <string name="dark_mode_summary_default">Enable system dark theme</string>
+    <string name="dark_mode_summary_powersave">Power saver is enabled</string>
+
+    <!-- Misc -->
     <string name="double_tap_sleep_gesture_title">Double tap to sleep</string>
     <string name="double_tap_sleep_gesture_summary">Double tap on the status bar to put the device to sleep</string>
     <string name="double_tap_sleep_lockscreen_title">Double tap to sleep</string>
     <string name="double_tap_sleep_lockscreen_summary">Double tap anywhere on the lockscreen to put phone to sleep</string>
+
 </resources>

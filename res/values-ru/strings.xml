@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2021 Project Fluid
-    
+<!--
+    Copyright (C) 2022 Project Fluid
+
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
 
-         http://www.apache.org/licenses/LICENSE-2.0
+        http://www.apache.org/licenses/LICENSE-2.0
 
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
@@ -14,13 +15,12 @@
     limitations under the License.
 -->
 
-<resources>
-    <!-- App name --> 
-    <string name="customisation_settings_title">Fluid Customisation</string>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Customization Titles -->
+    <!-- Misc -->
     <string name="double_tap_sleep_gesture_title">Двойное нажатие на строке состояния для сна</string>
     <string name="double_tap_sleep_gesture_summary">Дважды нажмите в любом месте на строке состояния, чтобы перевести устройство в спящий режим</string>
     <string name="double_tap_sleep_lockscreen_title">Двойное нажатие на экране блокировки для сна</string>
     <string name="double_tap_sleep_lockscreen_summary">Дважды нажмите в любом месте на экране блокировки, чтобы перевести устройство в спящий режим</string>
+
 </resources>
