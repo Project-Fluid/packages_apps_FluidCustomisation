@@ -35,6 +35,10 @@
     <string name="icon_manager_title">Icon manager</string>
     <string name="icon_manager_summary">Control visibility of status bar icons</string>
 
+    <!-- System -->
+    <string name="pocket_judge_title">Pocket detection</string>
+    <string name="pocket_judge_summary">Block screen and button inputs when device is in pocket</string>
+
     <!-- Misc -->
     <string name="double_tap_sleep_gesture_title">Double tap to sleep</string>
     <string name="double_tap_sleep_gesture_summary">Double tap on the status bar to put the device to sleep</string>

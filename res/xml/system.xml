@@ -19,4 +19,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/system_title" >
 
+    <org.projectfluid.customisation.preference.SystemSettingSwitchPreference
+        android:key="pocket_judge"
+        android:title="@string/pocket_judge_title"
+        android:summary="@string/pocket_judge_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
