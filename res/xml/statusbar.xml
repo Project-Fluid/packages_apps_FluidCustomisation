@@ -20,6 +20,12 @@
     android:title="@string/statusbar_title" >
 
         <Preference
+            android:key="traffic"
+            android:fragment="org.projectfluid.customisation.fragment.Traffic"
+            android:icon="@drawable/ic_traffic"
+            android:title="@string/traffic_title" />
+
+        <Preference
             android:key="icon_manager"
             android:title="@string/icon_manager_title"
             android:summary="@string/icon_manager_summary">
