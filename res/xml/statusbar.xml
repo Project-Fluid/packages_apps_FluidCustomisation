@@ -26,4 +26,10 @@
             <intent android:action="com.android.settings.action.STATUS_BAR_TUNER" />
         </Preference>
 
+         <SwitchPreference
+             android:key="combined_status_bar_signal_icons"
+             android:title="@string/combined_status_bar_signal_icons_title"
+             android:summary="@string/combined_status_bar_signal_icons_summary"
+             android:defaultValue="true" />
+
 </PreferenceScreen>

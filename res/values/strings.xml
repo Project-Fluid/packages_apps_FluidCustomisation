@@ -34,6 +34,8 @@
     <!-- StatusBar -->
     <string name="icon_manager_title">Icon manager</string>
     <string name="icon_manager_summary">Control visibility of status bar icons</string>
+    <string name="combined_status_bar_signal_icons_title">Combined signal icons</string>
+    <string name="combined_status_bar_signal_icons_summary">Enable combined signal icons in statusbar</string>
 
     <!-- System -->
     <string name="pocket_judge_title">Pocket detection</string>

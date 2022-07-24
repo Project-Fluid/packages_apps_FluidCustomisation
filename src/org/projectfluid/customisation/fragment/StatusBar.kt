@@ -17,21 +17,52 @@
 package org.projectfluid.customisation.fragment
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent
+import com.android.internal.util.fluid.FluidUtils
+
+import android.app.ActivityManagerNative
+import android.content.Context
+import android.content.ContentResolver
 
 import android.os.Bundle
 
+import android.provider.Settings;
+
 import androidx.preference.Preference
+import androidx.preference.PreferenceScreen
+import androidx.preference.SwitchPreference
 
 import com.android.settings.R
 import com.android.settings.SettingsPreferenceFragment
 
 class StatusBar : SettingsPreferenceFragment(), Preference.OnPreferenceChangeListener {
 
+    private lateinit var mEnableCombinedSignalIcons: SwitchPreference;
+
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         addPreferencesFromResource(R.xml.statusbar)
+
+        val resolver: ContentResolver = getActivity().getContentResolver()
+        val prefSet: PreferenceScreen = getPreferenceScreen()
+
+        mEnableCombinedSignalIcons = findPreference(COMBINED_SIGNAL_ICONS) as SwitchPreference?
+        val def = Settings.System.getString(
+            getContentResolver(),
+            COMBINED_SIGNAL_ICONS
+        )
+        mEnableCombinedSignalIcons.isChecked = (def != null && def.toInt() == 1)
+        mEnableCombinedSignalIcons.onPreferenceChangeListener = this
     }
 
     override fun onPreferenceChange(preference: Preference, newValue: Any?): Boolean {
+       if (preference === mEnableCombinedSignalIcons) {
+            val value = newValue as Boolean
+            Settings.System.putString(
+                getActivity().getContentResolver(),
+                COMBINED_SIGNAL_ICONS, if (value) "1" else "0"
+            )
+            FluidUtils.showSystemUiRestartDialog(getActivity())
+            return true
+        }
         return true
     }
 
@@ -39,5 +70,6 @@ class StatusBar : SettingsPreferenceFragment(), Preference.OnPreferenceChangeLis
 
     companion object {
         const val TAG = "FluidCustomisation"
+        private const val COMBINED_SIGNAL_ICONS = "combined_status_bar_signal_icons"
     }
 }
