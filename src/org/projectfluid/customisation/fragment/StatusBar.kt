@@ -36,12 +36,12 @@ import com.android.settings.SettingsPreferenceFragment
 
 class StatusBar : SettingsPreferenceFragment(), Preference.OnPreferenceChangeListener {
 
-    private lateinit var mEnableCombinedSignalIcons: SwitchPreference;
+    private var mEnableCombinedSignalIcons: SwitchPreference? = null
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         addPreferencesFromResource(R.xml.statusbar)
 
-        val resolver: ContentResolver = getActivity().getContentResolver()
+        val resolver: ContentResolver = getActivity()!!.getContentResolver()
         val prefSet: PreferenceScreen = getPreferenceScreen()
 
         mEnableCombinedSignalIcons = findPreference(COMBINED_SIGNAL_ICONS) as SwitchPreference?
@@ -49,15 +49,15 @@ class StatusBar : SettingsPreferenceFragment(), Preference.OnPreferenceChangeLis
             getContentResolver(),
             COMBINED_SIGNAL_ICONS
         )
-        mEnableCombinedSignalIcons.isChecked = (def != null && def.toInt() == 1)
-        mEnableCombinedSignalIcons.onPreferenceChangeListener = this
+        mEnableCombinedSignalIcons!!.isChecked = (def != null && def.toInt() == 1)
+        mEnableCombinedSignalIcons!!.onPreferenceChangeListener = this
     }
 
     override fun onPreferenceChange(preference: Preference, newValue: Any?): Boolean {
        if (preference === mEnableCombinedSignalIcons) {
             val value = newValue as Boolean
             Settings.System.putString(
-                getActivity().getContentResolver(),
+                getActivity()!!.getContentResolver(),
                 COMBINED_SIGNAL_ICONS, if (value) "1" else "0"
             )
             FluidUtils.showSystemUiRestartDialog(getActivity())

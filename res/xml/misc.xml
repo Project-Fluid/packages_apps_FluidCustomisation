@@ -34,7 +34,6 @@
             android:key="lockscreen_media_blur"
             android:title="@string/lockscreen_media_blur_title"
             android:dependency="show_lockscreen_media_art"
-            settings:allowEditText="true"
             android:max="25"
             android:min="0"
             android:defaultValue="25"
