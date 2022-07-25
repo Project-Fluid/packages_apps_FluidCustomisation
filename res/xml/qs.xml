@@ -19,4 +19,31 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/qs_title" >
 
+        <org.projectfluid.customisation.preference.SecureSettingSwitchPreference
+            android:key="qs_show_brightness"
+            android:title="@string/qs_brightness_slider_title"
+            android:summary="@string/qs_brightness_slider_summary"
+            android:defaultValue="true"/>
+
+        <org.projectfluid.customisation.preference.SecureSettingSwitchPreference
+            android:key="sysui_qqs_brightness_slider"
+            android:title="@string/quick_qs_brightness_slider_title"
+            android:summary="@string/quick_qs_brightness_slider_summary"
+            android:dependency="qs_show_brightness"
+            android:defaultValue="true"/>
+
+        <org.projectfluid.customisation.preference.SecureSettingSwitchPreference
+            android:key="qs_show_auto_brightness_button"
+            android:title="@string/brightness_icon_title"
+            android:summary="@string/brightness_icon_summary"
+            android:defaultValue="true"
+            android:dependency="qs_show_brightness"/>
+
+        <org.projectfluid.customisation.preference.SecureSettingSwitchPreference
+            android:key="qs_brightness_position_bottom"
+            android:title="@string/qs_brightness_position_bottom_title"
+            android:summary="@string/qs_brightness_position_bottom_summary"
+            android:defaultValue="true"
+            android:dependency="qs_show_brightness" />
+
 </PreferenceScreen>
